@@ -1,0 +1,5010 @@
+[
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/549453120042",
+      "Email": "Tridion.Sites.AdvisorGroup.aws@sdl.com",
+      "Id": "549453120042",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2022-09-21T15:10:12.749Z",
+      "Name": "AdvisorGroup",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "549453120042",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "XY",
+      "Customer": "AdvisorGroup",
+      "AssignmentGroup": "Tech Ops - GCT",
+      "OwningTeam": "GCT",
+      "ContactEmail": "vgopalakrishna@rws.com",
+      "MFAToken": "GALT00AC6CAD",
+      "ProductLine": "TridionSites",
+      "ContactEmailList": "cloud.operations.gct.team@rws.com"
+    },
+    "Alias": "advisorgroup",
+    "SwitchRoleLinks": [
+      "Automation-CrossAccount-Access",
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOperationsGlobalCrossAccountTridionCustomerSupportTeam",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "COCRDSCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "DB-CrossAccount-Role",
+      "TridionSites-CrossAccountAccess",
+      "TridionSitesCrossAccount"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "us-west-2",
+        "InstanceCount": 21
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/425028555295",
+      "Email": "Tridion.Docs.Amazon.aws@sdl.com",
+      "Id": "425028555295",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2022-12-13T14:07:55.9969999Z",
+      "Name": "AmazonServicesLLC",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "425028555295",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "XY",
+      "Customer": "Amazon",
+      "AssignmentGroup": "Tech Ops - GCT",
+      "OwningTeam": "GCT",
+      "ContactEmail": "vgopalakrishna@rws.com",
+      "MFAToken": "GALT00AC6CB4",
+      "ProductLine": "TridionDocs",
+      "ContactEmailList": "cloud.operations.gct.team@rws.com"
+    },
+    "Alias": "amazonservicesllc",
+    "SwitchRoleLinks": [
+      "Automation-CrossAccount-Access",
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "DB-CrossAccount-Role",
+      "TridionDocs-CrossAccountAccess",
+      "TridionDocsCrossAccount"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "us-west-2",
+        "InstanceCount": 7
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/258257057226",
+      "Email": "Cloud.ops.AWS.archpoc@sdl.com",
+      "Id": "258257057226",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2022-03-28T08:52:01.173Z",
+      "Name": "archpoc",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "258257057226",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "DG",
+      "Customer": "NA",
+      "AssignmentGroup": "Cloud Engineering Leadership",
+      "OwningTeam": "CloudPlatform",
+      "ContactEmail": "mvanderwal@rws.com",
+      "MFAToken": "GAKT00021540",
+      "ProductLine": "SharedServices",
+      "ContactEmailList": "cloud.engineering.platform@sdl.com"
+    },
+    "Alias": "archpoc",
+    "SwitchRoleLinks": [
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "eu-west-1",
+        "InstanceCount": 3
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/017820673778",
+      "Email": "Cloud.Operations.Aws+AtlasCopco@rws.com",
+      "Id": "017820673778",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2024-08-01T15:41:34.2999999Z",
+      "Name": "AtlasCopco",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "017820673778",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "XY",
+      "Customer": "Atlas Copco",
+      "AssignmentGroup": "Tech Ops - GCT",
+      "OwningTeam": "GCT",
+      "ContactEmail": "vgopalakrishna@rws.com",
+      "ProductLine": "TridionDocs",
+      "ContactEmailList": "cloud.operations.gct.team@rws.com"
+    },
+    "Alias": "atlascopco-017820673778",
+    "SwitchRoleLinks": [
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOperationsGlobalCrossAccountTridionCustomerSupportTeam",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "TridionDocsCrossAccount"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "eu-west-1",
+        "InstanceCount": 9
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/649803627656",
+      "Email": "sdlautopoc@sdl.com",
+      "Id": "649803627656",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2018-04-09T08:33:08.318Z",
+      "Name": "Automation",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "649803627656",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "TR",
+      "Customer": "NA",
+      "AssignmentGroup": "Cloud Engineering Automation",
+      "OwningTeam": "Automation",
+      "ContactEmail": "nlinhares@rws.com",
+      "ProductLine": "SharedServices",
+      "ContactEmailList": "cloud.engineering.platform@rws.com"
+    },
+    "Alias": "sdl-automation-team-649803627656",
+    "SwitchRoleLinks": [
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOperationsGlobalCrossAccountServiceAccount",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "TridionDocsCrossAccount",
+      "TridionSitesCrossAccount"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "us-east-1",
+        "InstanceCount": 1
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/840810176519",
+      "Email": "sdl.web.belmonduk.aws@sdl.com",
+      "Id": "840810176519",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2020-02-03T14:47:25.1400001Z",
+      "Name": "belmonduk",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "840810176519",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "TR",
+      "Customer": "Belmond",
+      "AssignmentGroup": "Tech Ops - GCT",
+      "OwningTeam": "GCT",
+      "ContactEmail": "vgopalakrishna@rws.com",
+      "MFAToken": "GAKT0008DDEA",
+      "ProductLine": "TridionSites",
+      "ContactEmailList": "cloud.operations.gct.team@rws.com"
+    },
+    "Alias": "belmonduk",
+    "SwitchRoleLinks": [
+      "Automation-CrossAccount-Access",
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountCyberSecurityTeam",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOperationsGlobalCrossAccountServiceAccount",
+      "CloudOperationsGlobalCrossAccountTridionCustomerSupportTeam",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "COCRDSCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "DB-CrossAccount-Role",
+      "TridionSites-CrossAccountAccess",
+      "TridionSitesCrossAccount"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "eu-west-1",
+        "InstanceCount": 16
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/732789073175",
+      "Email": "Tridion.Docs.BlizzardEntmt.aws@sdl.com",
+      "Id": "732789073175",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2022-09-06T13:32:48.634Z",
+      "Name": "BlizzardEntmt",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "732789073175",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "XY",
+      "Customer": "Blizzard Entertainment",
+      "AssignmentGroup": "Tech Ops - GCT",
+      "OwningTeam": "GCT",
+      "ContactEmail": "vgopalakrishna@rws.com",
+      "MFAToken": "GALT00AC6CAF",
+      "ProductLine": "TridionDocs",
+      "ContactEmailList": "cloud.operations.gct.team@rws.com"
+    },
+    "Alias": "blizzardentmt",
+    "SwitchRoleLinks": [
+      "Automation-CrossAccount-Access",
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOperationsGlobalCrossAccountTridionCustomerSupportTeam",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "DB-CrossAccount-Role",
+      "TridionDocs-CrossAccountAccess",
+      "TridionDocsCrossAccount"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "us-west-2",
+        "InstanceCount": 18
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/353930319049",
+      "Email": "sdl.web.canonmedical.aws@sdl.com",
+      "Id": "353930319049",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2019-11-14T10:02:50.1760001Z",
+      "Name": "canonmedical",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "353930319049",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "TR",
+      "Customer": "Canon Medical",
+      "AssignmentGroup": "Tech Ops - GCT",
+      "OwningTeam": "GCT",
+      "ContactEmail": "vgopalakrishna@rws.com",
+      "ProductLine": "TridionSites",
+      "ContactEmailList": "cloud.operations.gct.team@rws.com"
+    },
+    "Alias": "canonmedical-353930319049",
+    "SwitchRoleLinks": [
+      "Automation-CrossAccount-Access",
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOperationsGlobalCrossAccountServiceAccount",
+      "CloudOperationsGlobalCrossAccountTridionCustomerSupportTeam",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "COCRDSCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "DB-CrossAccount-Role",
+      "TridionSites-CrossAccountAccess",
+      "TridionSitesCrossAccount"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "ap-northeast-1",
+        "InstanceCount": 22
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/777797681461",
+      "Email": "Tridion.Sites.CarrierCorporation.aws@sdl.com",
+      "Id": "777797681461",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2021-08-24T13:27:17.8259999Z",
+      "Name": "CarrierCorp",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "777797681461",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "TR",
+      "Customer": "Carrier Corporation",
+      "AssignmentGroup": "Tech Ops - GCT",
+      "OwningTeam": "GCT",
+      "ContactEmail": "vgopalakrishna@rws.com",
+      "MFAToken": "GAKT0008D188",
+      "ProductLine": "TridionSites",
+      "ContactEmailList": "cloud.operations.gct.team@rws.com"
+    },
+    "Alias": "carriercorp",
+    "SwitchRoleLinks": [
+      "Automation-CrossAccount-Access",
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOperationsGlobalCrossAccountTridionCustomerSupportTeam",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "COCRDSCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "DB-CrossAccount-Role",
+      "TridionSites-CrossAccountAccess",
+      "TridionSitesCrossAccount"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "us-east-1",
+        "InstanceCount": 24
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/679381380318",
+      "Email": "ceatsharedimages@sdl.com",
+      "Id": "679381380318",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2021-11-09T10:03:08.851Z",
+      "Name": "ceatsharedimages",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "679381380318",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "TR",
+      "Customer": "NA",
+      "AssignmentGroup": "Cloud Engineering Automation",
+      "OwningTeam": "Automation",
+      "ContactEmail": "nlinhares@rws.com",
+      "ProductLine": "SharedServices",
+      "ContactEmailList": "cloud.engineering.platform@rws.com"
+    },
+    "Alias": "ceatsharedimages",
+    "SwitchRoleLinks": [
+      "Automation-CrossAccount-Access",
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "us-west-2",
+        "InstanceCount": 9
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/590184034373",
+      "Email": "Cloud.Operations.Aws+ChickFilA@rws.com",
+      "Id": "590184034373",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2024-03-11T11:13:11.164Z",
+      "Name": "ChickFilA",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "590184034373",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "XY",
+      "Customer": "Chick-Fil-A",
+      "AssignmentGroup": "Tech Ops - GCT",
+      "OwningTeam": "GCT",
+      "ContactEmail": "vgopalakrishna@rws.com",
+      "MFAToken": "GALT00AC6CB9",
+      "ProductLine": "TridionDocs",
+      "ContactEmailList": "cloud.operations.gct.team@rws.com"
+    },
+    "Alias": "chickfila-590184034373",
+    "SwitchRoleLinks": [
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "DB-CrossAccount-Role",
+      "TridionDocsCrossAccount",
+      "TridionSites-CrossAccountAccess"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "us-east-1",
+        "InstanceCount": 15
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/992382768530",
+      "Email": "Cloud.Operations.Aws+ChinaAirlines@rws.com",
+      "Id": "992382768530",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2024-01-08T15:58:05.904Z",
+      "Name": "ChinaAirlines",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "992382768530",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "TR",
+      "Customer": "ChinaAirlines",
+      "AssignmentGroup": "Tech Ops - GCT",
+      "OwningTeam": "GCT",
+      "ContactEmail": "vgopalakrishna@rws.com",
+      "MFAToken": "GALT00AC6CB0",
+      "ProductLine": "TridionSites",
+      "ContactEmailList": "cloud.operations.gct.team@rws.com"
+    },
+    "Alias": "chinaairlines-992382768530",
+    "SwitchRoleLinks": [
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "COCRDSCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "DB-CrossAccount-Role",
+      "TridionSites-CrossAccountAccess",
+      "TridionSitesCrossAccount"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "ap-northeast-1",
+        "InstanceCount": 26
+      }
+    ],
+    "SupportLevel": "Active"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/898866598284",
+      "Email": "cloudatlassian.aws@sdl.com",
+      "Id": "898866598284",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2022-01-04T12:20:17.5699999Z",
+      "Name": "CloudAtlassian",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "898866598284",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "DG",
+      "Customer": "NA",
+      "AssignmentGroup": "Cloud Engineering Platform",
+      "OwningTeam": "CloudPlatform",
+      "ContactEmail": "nlinhares@rws.com",
+      "MFAToken": "GALT00AC6CAB",
+      "ProductLine": "SharedServices",
+      "ContactEmailList": "cloud.engineering.platform@rws.com"
+    },
+    "Alias": "cloudatlassian",
+    "SwitchRoleLinks": [
+      "Automation-CrossAccount-Access",
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "DB-CrossAccount-Role",
+      "ecr-CrossAccountRole"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "eu-west-1",
+        "InstanceCount": 1
+      },
+      {
+        "Region": "us-west-2",
+        "InstanceCount": 1
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/305659580189",
+      "Email": "cloudoperationsnetworking@sdl.com",
+      "Id": "305659580189",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2022-10-26T08:22:20.358Z",
+      "Name": "CloudOperations",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "305659580189",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "TR",
+      "Customer": "NA",
+      "AssignmentGroup": "Cloud Engineering Platform",
+      "OwningTeam": "CloudPlatform",
+      "ContactEmail": "nlinhares@sdl.com",
+      "MFAToken": "GALT00AC6CC9",
+      "ProductLine": "SharedServices",
+      "ContactEmailList": "cloud.engineering.platform@sdl.com"
+    },
+    "Alias": "cloudoperations",
+    "SwitchRoleLinks": [
+      "Automation-CrossAccount-Access",
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount"
+    ],
+    "RegionsDeployed": [],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/436437695588",
+      "Email": "cloud.operations.global.aws@sdl.com",
+      "Id": "436437695588",
+      "JoinedMethod": {
+        "Value": "INVITED"
+      },
+      "JoinedTimestamp": "2014-10-30T16:23:36Z",
+      "Name": "CloudOperationsGlobal",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "436437695588",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "TR",
+      "Customer": "NA",
+      "AssignmentGroup": "Cloud Engineering Platform",
+      "OwningTeam": "CloudPlatform",
+      "ContactEmail": "nlinhares@sdl.com",
+      "MFAToken": "GAKT0005F2EC",
+      "ProductLine": "SharedServices",
+      "ContactEmailList": "cloud.engineering.platform@sdl.com"
+    },
+    "Alias": "cloudoperationsglobal",
+    "SwitchRoleLinks": [
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "awsmarketplace_role",
+      "cloudfix-fixer-approver-role",
+      "cloudfix-ssm-assumed-role",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "COCRDSCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "dtag-nonprod-euc1-aws-euc1-LanguageProducts-NonProduction",
+      "dtag-nonprod-euw1-aws-euw1-LanguageProducts-NonProduction",
+      "dtag-nonprod-euw2-aws-euw2-LanguageProducts-NonProduction",
+      "dtag-nonprod-use1-aws-use1-LanguageProducts-NonProduction",
+      "dtag-nonprod-usw2-aws-usw2-LanguageProducts-NonProduction",
+      "dtag-prod-apne1-aws-apn1-LanguageProducts-Production",
+      "dtag-prod-cac1-aws-cac1-LanguageProducts-Production",
+      "dtag-prod-euc1-aws-euc1-LanguageProducts-Production",
+      "dtag-prod-euw1-aws-euw1-LanguageProducts-Production",
+      "dtag-prod-euw2-aws-euw2-LanguageProducts-Production",
+      "dtag-prod-use1-aws-use1-LanguageProducts-Production",
+      "dtag-prod-usw2-aws-usw2-LanguageProducts-Production",
+      "GroupShareCrossAccount",
+      "LanguageCloudCrossAccount",
+      "LanguageWeaverCrossAccount",
+      "MultiTransTMSCrossAccount",
+      "S3_FullAccess",
+      "SecureTranslationCrossAccount",
+      "TeevityPollerRole",
+      "TMSCrossAccount",
+      "TridionDocsCrossAccount",
+      "TridionSitesCrossAccount",
+      "WorldServerCrossAccount"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "eu-west-2",
+        "InstanceCount": 10
+      },
+      {
+        "Region": "eu-west-1",
+        "InstanceCount": 27
+      },
+      {
+        "Region": "ap-northeast-1",
+        "InstanceCount": 4
+      },
+      {
+        "Region": "ca-central-1",
+        "InstanceCount": 4
+      },
+      {
+        "Region": "eu-central-1",
+        "InstanceCount": 32
+      },
+      {
+        "Region": "us-east-1",
+        "InstanceCount": 10
+      },
+      {
+        "Region": "us-west-1",
+        "InstanceCount": 6
+      },
+      {
+        "Region": "us-west-2",
+        "InstanceCount": 31
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/286010308970",
+      "Email": "Cloud.Operations.Aws+cloudops-tridiondocs-management@rws.com",
+      "Id": "286010308970",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2025-06-26T15:33:48.795Z",
+      "Name": "cloudops-tridiondocs-management",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "286010308970",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "XY",
+      "Customer": "NA",
+      "AssignmentGroup": "Tech Ops - GCT",
+      "OwningTeam": "GCT",
+      "ContactEmail": "vgopalakrishna@rws.com",
+      "ProductLine": "TridionDocs",
+      "ContactEmailList": "cloud.operations.gct.team@rws.com"
+    },
+    "Alias": "cloudops-tridiondocs-management-286010308970",
+    "SwitchRoleLinks": [
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "TridionDocsCrossAccount"
+    ],
+    "RegionsDeployed": [],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/843858394171",
+      "Email": "sdl.sts.clover.prod@sdl.com",
+      "Id": "843858394171",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2019-12-17T09:39:25.496Z",
+      "Name": "Clover",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "843858394171",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "EP",
+      "Customer": "NA",
+      "AssignmentGroup": "Cloud Engineering Platform",
+      "OwningTeam": "CloudPlatform",
+      "ContactEmail": "nlinhares@sdl.com",
+      "ProductLine": "SecureTranslation",
+      "ContactEmailList": "cloud.engineering.platform@sdl.com"
+    },
+    "Alias": "clover-843858394171",
+    "SwitchRoleLinks": [
+      "Automation-CrossAccount-Access",
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOperationsGlobalCrossAccountServiceAccount",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "DB-CrossAccount-Role",
+      "SecureTranslation-CrossAccountAccess",
+      "SecureTranslationCrossAccount"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "us-east-1",
+        "InstanceCount": 11
+      }
+    ],
+    "SupportLevel": "Active"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/703392091882",
+      "Email": "Cloud.Operations.Aws+Commerzbank@rws.com",
+      "Id": "703392091882",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2023-10-04T10:01:08.3110001Z",
+      "Name": "Commerzbank",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "703392091882",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "LW",
+      "Customer": "Commerzbank",
+      "AssignmentGroup": "CO - Machine Trans Prod",
+      "OwningTeam": "MT",
+      "ContactEmail": "nnarayanappa@rws.com",
+      "MFAToken": "GALT00AC6CC1",
+      "ProductLine": "LanguageWeaver",
+      "ContactEmailList": "cloud.operations.mt@rws.com"
+    },
+    "Alias": "commerzbank-703392091882",
+    "SwitchRoleLinks": [
+      "Automation-CrossAccount-Access",
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "DB-CrossAccount-Role",
+      "LanguageWeaverCrossAccount",
+      "MTCrossAccountAccess"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "eu-central-1",
+        "InstanceCount": 8
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/246377811781",
+      "Email": "cloud.operations.emea.aws@sdl.com",
+      "Id": "246377811781",
+      "JoinedMethod": {
+        "Value": "INVITED"
+      },
+      "JoinedTimestamp": "2014-01-27T14:28:00Z",
+      "Name": "Core DNS",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "246377811781",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "SX",
+      "Customer": "NA",
+      "AssignmentGroup": "Cloud Engineering Platform",
+      "OwningTeam": "CloudPlatform",
+      "ContactEmail": "nlinhares@sdl.com",
+      "MFAToken": "GAKT00021541",
+      "ProductLine": "NA",
+      "ContactEmailList": "cloud.engineering.platform@sdl.com"
+    },
+    "Alias": "sdlms",
+    "SwitchRoleLinks": [
+      "Automation-CrossAccount-Access",
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "cloudfront-role",
+      "Cloudoperationscrossaccountreservation",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountEnterpriseIT",
+      "CloudOperationsGlobalCrossAccountLCSystemsTeam",
+      "CloudOperationsGlobalCrossAccountLinuxTechOpsMT",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOperationsGlobalCrossAccountRoute53admin",
+      "CloudOperationsGlobalCrossAccountServiceAccount",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "innovationtrados",
+      "sdlmsrole"
+    ],
+    "RegionsDeployed": [],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/512226138816",
+      "Email": "cloud.engineering.databasestest.aws@sdl.com",
+      "Id": "512226138816",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2022-10-16T10:04:22.0959999Z",
+      "Name": "DBATest",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "512226138816",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "cloud.engineering.databases@sdl.com",
+      "CostCenter": "DG",
+      "Customer": "NA",
+      "AssignmentGroup": "Cloud Engineering Databases",
+      "OwningTeam": "DBA",
+      "ContactEmail": "rsrungram@rws.com",
+      "MFAToken": "GALT00AC6CBF",
+      "ProductLine": "SharedServices",
+      "ContactEmailList": "cloud.engineering.databases@rws.com"
+    },
+    "Alias": "dbatest-512226138816",
+    "SwitchRoleLinks": [
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "us-east-1",
+        "InstanceCount": 2
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/057367346115",
+      "Email": "sdl.web.DisneyLandParis.aws@sdl.com",
+      "Id": "057367346115",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2021-10-04T08:51:46.568Z",
+      "Name": "DisneyLandParis",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "057367346115",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "TR",
+      "Customer": "DisneyLand Paris",
+      "AssignmentGroup": "Tech Ops - GCT",
+      "OwningTeam": "GCT",
+      "ContactEmail": "vgopalakrishna@rws.com",
+      "ProductLine": "TridionSites",
+      "ContactEmailList": "cloud.operations.gct.team@rws.com"
+    },
+    "Alias": "disneylandparis",
+    "SwitchRoleLinks": [
+      "Automation-CrossAccount-Access",
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountCyberSecurityTeam",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "COCRDSCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "DB-CrossAccount-Role",
+      "TridionSites-CrossAccountAccess",
+      "TridionSitesCrossAccount"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "eu-west-1",
+        "InstanceCount": 24
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/381492069693",
+      "Email": "Cloud.Operations.Aws+DocsAICloud@rws.com",
+      "Id": "381492069693",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2024-06-11T16:00:10.085Z",
+      "Name": "DocsAICloud",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "381492069693",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "XY",
+      "Customer": "NA",
+      "AssignmentGroup": "Tech Ops - GCT",
+      "OwningTeam": "GCT",
+      "ContactEmail": "vgopalakrishna@rws.com",
+      "ProductLine": "TridionDocs",
+      "ContactEmailList": "cloud.operations.gct.team@rws.com"
+    },
+    "Alias": "docsaicloud-381492069693",
+    "SwitchRoleLinks": [
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "DocsGeniusAICloudlimitedreadonlyaccessrole",
+      "TridionDocsCrossAccount"
+    ],
+    "RegionsDeployed": [],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/767397986227",
+      "Email": "Cloud.Operations.Aws+DocsAIOnPrem@rws.com",
+      "Id": "767397986227",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2024-06-11T16:01:14.5999999Z",
+      "Name": "DocsAIOnPrem",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "767397986227",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "XY",
+      "Customer": "NA",
+      "AssignmentGroup": "Tech Ops - GCT",
+      "OwningTeam": "GCT",
+      "ContactEmail": "vgopalakrishna@rws.com",
+      "ProductLine": "TridionDocs",
+      "ContactEmailList": "cloud.operations.gct.team@rws.com"
+    },
+    "Alias": "docsaionprem-767397986227",
+    "SwitchRoleLinks": [
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "TridionDocsCrossAccount"
+    ],
+    "RegionsDeployed": [],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/554749792021",
+      "Email": "sdl.slate.dev.aws@sdl.com",
+      "Id": "554749792021",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2020-03-24T14:26:12.3729999Z",
+      "Name": "DXP Dev",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "554749792021",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "FW",
+      "Customer": "NA",
+      "AssignmentGroup": "CO - Machine Trans Prod",
+      "OwningTeam": "MT",
+      "ContactEmail": "jshaw@rws.com",
+      "MFAToken": "GAKT00066061",
+      "ProductLine": "RWSPortals",
+      "ContactEmailList": "cloud.operations.mt@rws.com"
+    },
+    "Alias": "sdlslatedev",
+    "SwitchRoleLinks": [
+      "Automation-CrossAccount-Access",
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOperationsGlobalCrossAccountServiceAccount",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "eu-west-1",
+        "InstanceCount": 4
+      },
+      {
+        "Region": "eu-central-1",
+        "InstanceCount": 2
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/028639881893",
+      "Email": "Cloud.Operations.Aws+EUIPO@rws.com",
+      "Id": "028639881893",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2023-11-20T17:38:19.058Z",
+      "Name": "EUIPO",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "028639881893",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "XY",
+      "Customer": "EUIPO",
+      "AssignmentGroup": "Tech Ops - GCT",
+      "OwningTeam": "GCT",
+      "ContactEmail": "vgopalakrishna@rws.com",
+      "MFAToken": "GALT00AC6CBC",
+      "ProductLine": "TridionDocs",
+      "ContactEmailList": "Cloud.Operations.Aws+EUIPO@rws.com"
+    },
+    "Alias": "euipo-028639881893",
+    "SwitchRoleLinks": [
+      "Automation-CrossAccount-Access",
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "DB-CrossAccount-Role",
+      "TridionDocs-CrossAccountAccess",
+      "TridionDocsCrossAccount"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "eu-west-1",
+        "InstanceCount": 10
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/796032538517",
+      "Email": "sdl.web.faf.aws@sdl.com",
+      "Id": "796032538517",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2019-12-03T18:45:39.9189999Z",
+      "Name": "FAF",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "796032538517",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "TR",
+      "Customer": "FAF",
+      "AssignmentGroup": "Tech Ops - GCT",
+      "OwningTeam": "GCT",
+      "ContactEmail": "vgopalakrishna@rws.com",
+      "ProductLine": "TridionSites",
+      "ContactEmailList": "cloud.operations.gct.team@rws.com"
+    },
+    "Alias": "faf-796032538517",
+    "SwitchRoleLinks": [
+      "Automation-CrossAccount-Access",
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOperationsGlobalCrossAccountServiceAccount",
+      "CloudOperationsGlobalCrossAccountTridionCustomerSupportTeam",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "COCRDSCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "DB-CrossAccount-Role",
+      "TridionSites-CrossAccountAccess",
+      "TridionSitesCrossAccount"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "us-east-1",
+        "InstanceCount": 27
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/424072580606",
+      "Email": "gslo.aws@sdl.com",
+      "Id": "424072580606",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2021-05-10T10:46:05.1909999Z",
+      "Name": "GroupshareLO",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "424072580606",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "LS",
+      "Customer": "GroupShare Language Office",
+      "AssignmentGroup": "Tech Ops - EPTP",
+      "OwningTeam": "EPTP",
+      "ContactEmail": "nnarayanappa@rws.com",
+      "MFAToken": "GAKT00065FDB",
+      "ProductLine": "GroupShare",
+      "ContactEmailList": "cloud.operations.eptp.team@rws.com"
+    },
+    "Alias": "groupsharelo",
+    "SwitchRoleLinks": [
+      "Automation-CrossAccount-Access",
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "DB-CrossAccount-Role",
+      "GroupShareCrossAccount",
+      "GS-CrossAccountAccess"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "eu-west-2",
+        "InstanceCount": 4
+      },
+      {
+        "Region": "ap-northeast-1",
+        "InstanceCount": 6
+      },
+      {
+        "Region": "eu-central-1",
+        "InstanceCount": 17
+      },
+      {
+        "Region": "us-west-2",
+        "InstanceCount": 4
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/701713532182",
+      "Email": "Tridion.Docs.HPI.aws@sdl.com",
+      "Id": "701713532182",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2023-07-04T13:48:09.927Z",
+      "Name": "HPI",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "701713532182",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "XY",
+      "Customer": "HPI",
+      "AssignmentGroup": "Tech Ops - GCT",
+      "OwningTeam": "GCT",
+      "ContactEmail": "vgopalakrishna@rws.com",
+      "MFAToken": "GAKT0004503D",
+      "ProductLine": "TridionDocs",
+      "ContactEmailList": "cloud.operations.gct.team@rws.com"
+    },
+    "Alias": "hpi-701713532182",
+    "SwitchRoleLinks": [
+      "Automation-CrossAccount-Access",
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOperationsGlobalCrossAccountTridionCustomerSupportTeam",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "DB-CrossAccount-Role",
+      "TridionDocs-CrossAccountAccess",
+      "TridionDocsCrossAccount"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "us-east-1",
+        "InstanceCount": 18
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/124305488118",
+      "Email": "Cloud.Operations.Aws+IAMIdentityCenter@rws.com",
+      "Id": "124305488118",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2025-12-02T06:30:30.401Z",
+      "Name": "IAM Identity Center",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "124305488118",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "TR",
+      "Customer": "NA",
+      "AssignmentGroup": "Cloud Engineering Platform",
+      "OwningTeam": "CloudPlatform",
+      "ContactEmail": "rsrungram@rws.com",
+      "ProductLine": "NA",
+      "ContactEmailList": "cloud.engineering.platform@sdl.com"
+    },
+    "Alias": "iamidentitycenter-124305488118",
+    "SwitchRoleLinks": [
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount"
+    ],
+    "RegionsDeployed": [],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/807859767417",
+      "Email": "sdl.web.kaeser.aws@sdl.com",
+      "Id": "807859767417",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2021-02-23T04:55:00.7079999Z",
+      "Name": "Kaeser",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "807859767417",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "TR",
+      "Customer": "Kaeser",
+      "AssignmentGroup": "Tech Ops - GCT",
+      "OwningTeam": "GCT",
+      "ContactEmail": "vgopalakrishna@rws.com",
+      "MFAToken": "GAKT0002771B",
+      "ProductLine": "TridionSites",
+      "ContactEmailList": "cloud.operations.gct.team@rws.com"
+    },
+    "Alias": "kaeser",
+    "SwitchRoleLinks": [
+      "Automation-CrossAccount-Access",
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOperationsGlobalCrossAccountTridionCustomerSupportTeam",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "COCRDSCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "DB-CrossAccount-Role",
+      "TridionSites-CrossAccountAccess",
+      "TridionSitesCrossAccount"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "eu-west-1",
+        "InstanceCount": 39
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/214544520382",
+      "Email": "Tridion.Sites.Kaeserwebops.aws@sdl.com",
+      "Id": "214544520382",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2022-08-24T07:00:52.23Z",
+      "Name": "KaeserWebOps",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "214544520382",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "TR",
+      "Customer": "Kaeser",
+      "AssignmentGroup": "Tech Ops - GCT",
+      "OwningTeam": "GCT",
+      "ContactEmail": "vgopalakrishna@rws.com",
+      "MFAToken": "GALT00AC6CCD",
+      "ProductLine": "TridionSites",
+      "ContactEmailList": "cloud.operations.gct.team@rws.com"
+    },
+    "Alias": "kaeserwebops",
+    "SwitchRoleLinks": [
+      "Automation-CrossAccount-Access",
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "COCRDSCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "DB-CrossAccount-Role",
+      "TridionSites-CrossAccountAccess",
+      "TridionSitesCrossAccount"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "eu-west-1",
+        "InstanceCount": 7
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/913524935889",
+      "Email": "Cloud.Operations.Aws+LCDEV@rws.com",
+      "Id": "913524935889",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2025-03-06T13:35:33.532Z",
+      "Name": "LCDEV",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "913524935889",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "GG",
+      "Customer": "NA",
+      "AssignmentGroup": "CO - Machine Trans Prod",
+      "OwningTeam": "MT",
+      "ContactEmail": "nnarayanappa@rws.com",
+      "ProductLine": "LanguageCloud",
+      "ContactEmailList": "cloud.operations.mt@rws.com"
+    },
+    "Alias": "lcdev-913524935889",
+    "SwitchRoleLinks": [
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountDevelopmentTeam",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "LanguageCloudCrossAccount",
+      "lcaccountss3readaccesscrossaccount",
+      "LCDevlimitedaccessrole",
+      "RDS-read-enhanced-monitor"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "eu-central-1",
+        "InstanceCount": 63
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/471112549122",
+      "Email": "Cloud.Operations.Aws+LCPRODCanada@rws.com",
+      "Id": "471112549122",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2024-05-21T12:34:59.921Z",
+      "Name": "LCPRODCanada",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "471112549122",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "GW",
+      "Customer": "NA",
+      "AssignmentGroup": "CO - Machine Trans Prod",
+      "OwningTeam": "MT",
+      "ContactEmail": "Cloud.Operations.Aws+LCPRODCanada@rws.com",
+      "MFAToken": "GALT00AC6CBA",
+      "ProductLine": "LanguageCloud",
+      "ContactEmailList": "cloud.operations.mt@rws.com"
+    },
+    "Alias": "lcprodcanada-471112549122",
+    "SwitchRoleLinks": [
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountDevelopmentTeam",
+      "CloudOperationsGlobalCrossAccountDevelopmentTeamBilling",
+      "CloudOperationsGlobalCrossAccountLCDevOps",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "LanguageCloudCrossAccount",
+      "lc-s3-cost-allocation-role",
+      "lcaccountss3readaccesscrossaccount",
+      "MTCrossAccountAccess",
+      "RDS-read-enhanced-monitor"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "ca-central-1",
+        "InstanceCount": 74
+      },
+      {
+        "Region": "ca-west-1",
+        "InstanceCount": 3
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/392128215644",
+      "Email": "sdl.web.malvernpl.aws@sdl.com",
+      "Id": "392128215644",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2019-11-20T15:21:23.387Z",
+      "Name": "Malvern",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "392128215644",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "TR",
+      "Customer": "Malvern",
+      "AssignmentGroup": "Tech Ops - GCT",
+      "OwningTeam": "GCT",
+      "ContactEmail": "vgopalakrishna@rws.com",
+      "ProductLine": "TridionSites",
+      "ContactEmailList": "cloud.operations.gct.team@rws.com"
+    },
+    "Alias": "malvernpl",
+    "SwitchRoleLinks": [
+      "Automation-CrossAccount-Access",
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOperationsGlobalCrossAccountServiceAccount",
+      "CloudOperationsGlobalCrossAccountTridionCustomerSupportTeam",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "COCRDSCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "DB-CrossAccount-Role",
+      "TridionSites-CrossAccountAccess",
+      "TridionSitesCrossAccount"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "eu-west-1",
+        "InstanceCount": 31
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/640168456910",
+      "Email": "Cloud.Operations.Aws+NationalBankofCanada@rws.com",
+      "Id": "640168456910",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2025-02-19T04:51:48.8069999Z",
+      "Name": "National Bank of Canada",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "640168456910",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "LW",
+      "Customer": "NA",
+      "AssignmentGroup": "CO - Machine Trans Prod",
+      "OwningTeam": "MT",
+      "ContactEmail": "nnarayanappa@rws.com",
+      "ProductLine": "LanguageWeaver",
+      "ContactEmailList": "cloud.operations.mt@sdl.com"
+    },
+    "Alias": "nationalbankofcanada-640168456910",
+    "SwitchRoleLinks": [
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "LanguageWeaverCrossAccount"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "ca-central-1",
+        "InstanceCount": 4
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/022669747108",
+      "Email": "sdl.web.nationwide.aws@sdl.com",
+      "Id": "022669747108",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2020-07-01T15:47:24.94Z",
+      "Name": "Nationwide",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "022669747108",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "TR",
+      "Customer": "Nationwide",
+      "AssignmentGroup": "Tech Ops - GCT",
+      "OwningTeam": "GCT",
+      "ContactEmail": "vgopalakrishna@rws.com",
+      "ProductLine": "TridionSites",
+      "ContactEmailList": "cloud.operations.gct.team@rws.com"
+    },
+    "Alias": "nationwide-022669747108",
+    "SwitchRoleLinks": [
+      "Automation-CrossAccount-Access",
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOperationsGlobalCrossAccountPRTGTestRole",
+      "CloudOperationsGlobalCrossAccountServiceAccount",
+      "CloudOperationsGlobalCrossAccountTridionCustomerSupportTeam",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "COCRDSCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "DB-CrossAccount-Role",
+      "TridionSites-CrossAccountAccess",
+      "TridionSitesCrossAccount"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "us-east-1",
+        "InstanceCount": 25
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/955357298661",
+      "Email": "sdl.web.netapp.aws@sdl.com",
+      "Id": "955357298661",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2020-06-24T16:47:26.644Z",
+      "Name": "NetApp",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "955357298661",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "TR",
+      "Customer": "NetApp",
+      "AssignmentGroup": "Tech Ops - GCT",
+      "OwningTeam": "GCT",
+      "ContactEmail": "vgopalakrishna@rws.com",
+      "ProductLine": "TridionSites",
+      "ContactEmailList": "cloud.operations.gct.team@rws.com"
+    },
+    "Alias": "netapp-955357298661",
+    "SwitchRoleLinks": [
+      "Automation-CrossAccount-Access",
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOperationsGlobalCrossAccountServiceAccount",
+      "CloudOperationsGlobalCrossAccountTridionCustomerSupportTeam",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "COCRDSCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "DB-CrossAccount-Role",
+      "TridionSites-CrossAccountAccess",
+      "TridionSitesCrossAccount"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "us-east-1",
+        "InstanceCount": 26
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/273354631802",
+      "Email": "Cloud.Operations.Aws+NovartisPharmaAG@rws.com",
+      "Id": "273354631802",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2024-10-18T13:17:48.0869998Z",
+      "Name": "Novartis Pharma AG",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "273354631802",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "XY",
+      "Customer": "NA",
+      "AssignmentGroup": "Tech Ops - GCT",
+      "OwningTeam": "GCT",
+      "ContactEmail": "vgopalakrishna@rws.com",
+      "ProductLine": "TridionDocs",
+      "ContactEmailList": "cloud.operations.gct.team@rws.com"
+    },
+    "Alias": "novartispharmaag-273354631802",
+    "SwitchRoleLinks": [
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "TridionDocsCrossAccount"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "eu-central-1",
+        "InstanceCount": 10
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/597088052027",
+      "Email": "Cloud.Operations.Aws+PortalsRWSDigitalPlatform@rws.com",
+      "Id": "597088052027",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2024-09-05T13:34:11.5929999Z",
+      "Name": "PortalsRWSDigitalPlatform",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "597088052027",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "FW",
+      "Customer": "RWS",
+      "AssignmentGroup": "CO - Machine Trans Prod",
+      "OwningTeam": "MT",
+      "ContactEmail": "nnarayanappa@rws.com",
+      "ProductLine": "RWSPortals",
+      "ContactEmailList": "cloud.operations.mt@rws.com"
+    },
+    "Alias": "portalsrwsdigitalplatform-597088052027",
+    "SwitchRoleLinks": [
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "cloudwatchreadaccess",
+      "COCCrossAccount",
+      "crossaccountrole",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "hai-development-role",
+      "IP-Portal-prod-team",
+      "ipportal-development-webdunia",
+      "ipportal-development-webdunia1",
+      "readonlyaccesstoPortalsRWSDigitalPlatform"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "eu-central-1",
+        "InstanceCount": 12
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/503561437832",
+      "Email": "Cloud.Operations.Aws+PortalsRWSDigitalPlatformNonProd@rws.com",
+      "Id": "503561437832",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2024-09-19T07:39:29.4479999Z",
+      "Name": "PortalsRWSDigitalPlatformNonProd",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "503561437832",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "FW",
+      "Customer": "NA",
+      "AssignmentGroup": "CO - Machine Trans Prod",
+      "OwningTeam": "MT",
+      "ContactEmail": "nnarayanappa@rws.com",
+      "ProductLine": "RWSPortals",
+      "ContactEmailList": "cloud.operations.mt@rws.com"
+    },
+    "Alias": "portalsrwsdigitalplatformnonprod-503561437832",
+    "SwitchRoleLinks": [
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "crossaccountrole",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "IAMCloudwatchaccess",
+      "IP-Portal-development-team2",
+      "lc-IP-Portal-development-team",
+      "PortalsRWSDigitalPlatformNonProdcrossrole",
+      "readaccess",
+      "S3_FullAccess"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "eu-central-1",
+        "InstanceCount": 25
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/180920475328",
+      "Email": "Cloud.Operations.Aws+ProgrammeMadagascar1@rws.com",
+      "Id": "180920475328",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2025-12-02T14:57:25.0429999Z",
+      "Name": "Programme Madagascar1",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "180920475328",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "TR",
+      "Customer": "NA",
+      "AssignmentGroup": "Cloud Engineering Platform",
+      "OwningTeam": "CloudPlatform",
+      "ContactEmail": "rsrungram@rws.com",
+      "ProductLine": "SharedServices",
+      "ContactEmailList": "cloud.engineering.platform@sdl.com"
+    },
+    "Alias": "programmemadagascar1-180920475328",
+    "SwitchRoleLinks": [
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount"
+    ],
+    "RegionsDeployed": [],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/624545858521",
+      "Email": "Cloud.Operations.Aws+ProgrammeMadagascar2@rws.com",
+      "Id": "624545858521",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2025-12-02T15:11:24.3819999Z",
+      "Name": "Programme Madagascar2",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "624545858521",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "TR",
+      "Customer": "NA",
+      "AssignmentGroup": "Cloud Engineering Platform",
+      "OwningTeam": "CloudPlatform",
+      "ContactEmail": "rsrungram@rws.com",
+      "ProductLine": "SharedServices",
+      "ContactEmailList": "cloud.engineering.platform@sdl.com"
+    },
+    "Alias": "programmemadagascar2-624545858521",
+    "SwitchRoleLinks": [
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount"
+    ],
+    "RegionsDeployed": [],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/423818744456",
+      "Email": "Cloud.Operations.Aws+ProgrammeMadagascar3@rws.com",
+      "Id": "423818744456",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2025-12-02T15:19:21.7550001Z",
+      "Name": "Programme Madagascar3",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "423818744456",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "TR",
+      "Customer": "NA",
+      "AssignmentGroup": "Cloud Engineering Platform",
+      "OwningTeam": "CloudPlatform",
+      "ContactEmail": "rsrungram@rws.com",
+      "ProductLine": "SharedServices",
+      "ContactEmailList": "cloud.engineering.platform@sdl.com"
+    },
+    "Alias": "programmemadagascar3-423818744456",
+    "SwitchRoleLinks": [
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount"
+    ],
+    "RegionsDeployed": [],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/425221470352",
+      "Email": "Cloud.Operations.Aws+ProgrammeMadagascar4@rws.com",
+      "Id": "425221470352",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2025-12-02T15:25:45.321Z",
+      "Name": "Programme Madagascar4",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "425221470352",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "TR",
+      "Customer": "NA",
+      "AssignmentGroup": "Cloud Engineering Platform",
+      "OwningTeam": "CloudPlatform",
+      "ContactEmail": "rsrungram@rws.com",
+      "ProductLine": "SharedServices",
+      "ContactEmailList": "cloud.engineering.platform@sdl.com"
+    },
+    "Alias": "programmemadagascar4-425221470352",
+    "SwitchRoleLinks": [
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount"
+    ],
+    "RegionsDeployed": [],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/203937983930",
+      "Email": "Tridion.Sites.RedRoofInn.aws@sdl.com",
+      "Id": "203937983930",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2023-04-11T13:15:44.578Z",
+      "Name": "RedRoofInn",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "203937983930",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "TR",
+      "Customer": "Red Roof Inn",
+      "AssignmentGroup": "Tech Ops - GCT",
+      "OwningTeam": "GCT",
+      "ContactEmail": "vgopalakrishna@rws.com",
+      "MFAToken": "GALT00AC6CB6",
+      "ProductLine": "TridionSites",
+      "ContactEmailList": "cloud.operations.gct.team@rws.com"
+    },
+    "Alias": "redroofinn",
+    "SwitchRoleLinks": [
+      "Automation-CrossAccount-Access",
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "COCRDSCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "DB-CrossAccount-Role",
+      "TridionSites-CrossAccountAccess",
+      "TridionSitesCrossAccount"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "us-east-1",
+        "InstanceCount": 25
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/752572918106",
+      "Email": "refinitive.aws@sdl.com",
+      "Id": "752572918106",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2021-06-16T13:34:34.627Z",
+      "Name": "Refinitive",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "752572918106",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "LW",
+      "Customer": "Refinitiv",
+      "AssignmentGroup": "CO - Machine Trans Prod",
+      "OwningTeam": "MT",
+      "ContactEmail": "nnarayanappa@rws.com",
+      "ProductLine": "LanguageWeaver",
+      "ContactEmailList": "cloud.operations.mt@rws.com"
+    },
+    "Alias": "refinitive",
+    "SwitchRoleLinks": [
+      "Automation-CrossAccount-Access",
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "cloudops_mt-iam-basepolicy",
+      "COCCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "DB-CrossAccount-Role",
+      "LanguageWeaverCrossAccount",
+      "MTCrossAccountAccess"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "eu-central-1",
+        "InstanceCount": 31
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/429418847965",
+      "Email": "Tridion.Sites.RHG_ROW.aws@sdl.com",
+      "Id": "429418847965",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2021-07-15T09:35:04.4649999Z",
+      "Name": "RHGrow",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "429418847965",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "TR",
+      "Customer": "Radisson Hotel Group Rest Of World",
+      "AssignmentGroup": "Tech Ops - GCT",
+      "OwningTeam": "GCT",
+      "ContactEmail": "vgopalakrishna@rws.com",
+      "MFAToken": "GAKT0002770C",
+      "ProductLine": "TridionSites",
+      "ContactEmailList": "cloud.operations.gct.team@rws.com"
+    },
+    "Alias": "rhgrow",
+    "SwitchRoleLinks": [
+      "Automation-CrossAccount-Access",
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOperationsGlobalCrossAccountTridionCustomerSupportTeam",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "COCRDSCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "DB-CrossAccount-Role",
+      "TridionSites-CrossAccountAccess",
+      "TridionSitesCrossAccount"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "eu-west-1",
+        "InstanceCount": 37
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/292634802543",
+      "Email": "Tridion.Sites.rwscom.aws@sdl.com",
+      "Id": "292634802543",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2022-06-22T13:25:05.157Z",
+      "Name": "RWScom",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "292634802543",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "DG",
+      "Customer": "rws.com",
+      "AssignmentGroup": "Tech Ops - GCT",
+      "OwningTeam": "GCT",
+      "ContactEmail": "vgopalakrishna@rws.com",
+      "ProductLine": "SharedServices",
+      "ContactEmailList": "cloud.operations.gct.team@rws.com"
+    },
+    "Alias": "rwscom",
+    "SwitchRoleLinks": [
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "CrossAccountRWScomTeam",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "TridionSites-CrossAccountAccess",
+      "TridionSitesCrossAccount"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "eu-west-1",
+        "InstanceCount": 29
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/637423239440",
+      "Email": "Cloud.Operations.Aws+RWSDXP@rws.com",
+      "Id": "637423239440",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2024-02-20T07:29:34.1649999Z",
+      "Name": "RWSDXP",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "637423239440",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "IP",
+      "Customer": "NA",
+      "AssignmentGroup": "Tech Ops - GCT",
+      "OwningTeam": "GCT",
+      "ContactEmail": "vgopalakrishna@rws.com",
+      "ProductLine": "TridionSites",
+      "ContactEmailList": "cloud.operations.gct.team@rws.com"
+    },
+    "Alias": "rwsdxp-637423239440",
+    "SwitchRoleLinks": [
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "COCRDSCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "DB-CrossAccount-Role",
+      "TridionSites-CrossAccountAccess",
+      "TridionSitesCrossAccount"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "eu-west-1",
+        "InstanceCount": 35
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/730335238465",
+      "Email": "Cloud.Operations.Aws+rwslcshared@rws.com",
+      "Id": "730335238465",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2024-02-22T09:53:15.881Z",
+      "Name": "rwslcshared",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "730335238465",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "GW",
+      "Customer": "NA",
+      "AssignmentGroup": "CO - Machine Trans Prod",
+      "OwningTeam": "MT",
+      "ContactEmail": "nnarayanappa@rws.com",
+      "ProductLine": "LanguageCloud",
+      "ContactEmailList": "cloud.operations.mt@rws.com"
+    },
+    "Alias": "rwslcshared-730335238465",
+    "SwitchRoleLinks": [
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountDevelopmentTeam",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "DB-CrossAccount-Role",
+      "LanguageCloudCrossAccount"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "eu-central-1",
+        "InstanceCount": 21
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/971422709828",
+      "Email": "Cloud.Operations.Aws+SandvikMiningandConstructionGmbH@rws.com",
+      "Id": "971422709828",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2025-02-03T20:04:32.9779999Z",
+      "Name": "Sandvik Mining and Construction GmbH",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "971422709828",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "XY",
+      "Customer": "NA",
+      "AssignmentGroup": "Tech Ops - GCT",
+      "OwningTeam": "GCT",
+      "ContactEmail": "vgopalakrishna@rws.com",
+      "ProductLine": "TridionDocs",
+      "ContactEmailList": "cloud.operations.gct.team@rws.com"
+    },
+    "Alias": "sandvikminingandconstructiongmbh-971422709828",
+    "SwitchRoleLinks": [
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOperationsGlobalCrossAccountTridionCustomerSupportTeam",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "TridionDocsCrossAccount"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "eu-west-1",
+        "InstanceCount": 16
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/564223854250",
+      "Email": "cloud.services.security@sdl.com",
+      "Id": "564223854250",
+      "JoinedMethod": {
+        "Value": "INVITED"
+      },
+      "JoinedTimestamp": "2014-12-19T12:03:29Z",
+      "Name": "SDL Cloud Services Security",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "564223854250",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "DG",
+      "Customer": "NA",
+      "AssignmentGroup": "Cloud Ops - Security",
+      "OwningTeam": "Security",
+      "ContactEmail": "sneyithaleth@sdl.com",
+      "MFAToken": "GAKT0005F2F9",
+      "ProductLine": "SharedServices",
+      "ContactEmailList": "cloudoperations.security.team@rws.com"
+    },
+    "Alias": "sdlsecurity",
+    "SwitchRoleLinks": [
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCyberSecurityTeam",
+      "CloudOperationsGlobalCrossAccountSecurityAccount",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "DBCrossAccountRole",
+      "IAM-Dummy-Role",
+      "TeevityPollerRole"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "eu-west-2",
+        "InstanceCount": 1
+      },
+      {
+        "Region": "eu-west-1",
+        "InstanceCount": 2
+      },
+      {
+        "Region": "eu-central-1",
+        "InstanceCount": 5
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/282073420547",
+      "Email": "groupshare.aws@sdl.com",
+      "Id": "282073420547",
+      "JoinedMethod": {
+        "Value": "INVITED"
+      },
+      "JoinedTimestamp": "2017-07-06T13:33:00.739Z",
+      "Name": "SDL GroupShare",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "282073420547",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "SX",
+      "Customer": "NA",
+      "AssignmentGroup": "Tech Ops - EPTP",
+      "OwningTeam": "EPTP",
+      "ContactEmail": "nnarayanappa@rws.com",
+      "MFAToken": "GAKT0005F334",
+      "ProductLine": "GroupShare",
+      "ContactEmailList": "cloud.operations.eptp.team@rws.com"
+    },
+    "Alias": "sdlgroupshare",
+    "SwitchRoleLinks": [
+      "Automation-CrossAccount-Access",
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "Cloudoperationscrossaccountreservation",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountDBA",
+      "CloudOperationsGlobalCrossAccountGroupShareadmin",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOperationsGlobalCrossAccountServiceAccount",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "DB-CrossAccount-Role",
+      "GroupShareCrossAccount",
+      "GS-CrossAccountAccess"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "eu-west-2",
+        "InstanceCount": 6
+      },
+      {
+        "Region": "ap-northeast-1",
+        "InstanceCount": 3
+      },
+      {
+        "Region": "eu-central-1",
+        "InstanceCount": 39
+      },
+      {
+        "Region": "us-west-2",
+        "InstanceCount": 11
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/845319792003",
+      "Email": "knowledgecenter.aws@sdl.com",
+      "Id": "845319792003",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2017-07-27T09:24:09.9649999Z",
+      "Name": "SDL Knowledgecenter Production",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "845319792003",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "XY",
+      "Customer": "NA",
+      "AssignmentGroup": "Tech Ops - GCT",
+      "OwningTeam": "GCT",
+      "ContactEmail": "vgopalakrishna@rws.com",
+      "ProductLine": "TridionDocs",
+      "ContactEmailList": "cloud.operations.gct.team@rws.com"
+    },
+    "Alias": "knowledgecenterprod",
+    "SwitchRoleLinks": [
+      "Automation-CrossAccount-Access",
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountKCadmin",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOperationsGlobalCrossAccountServiceAccount",
+      "CloudOperationsGlobalCrossAccountTecflairMonitoring",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "DB-CrossAccount-Role",
+      "TridionDocsCrossAccount",
+      "TridionSites-CrossAccountAccess"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "eu-west-2",
+        "InstanceCount": 6
+      },
+      {
+        "Region": "eu-central-1",
+        "InstanceCount": 66
+      },
+      {
+        "Region": "us-east-1",
+        "InstanceCount": 7
+      },
+      {
+        "Region": "us-west-2",
+        "InstanceCount": 108
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/152462436113",
+      "Email": "Munich.RE.VDI.POC.aws@sdl.com",
+      "Id": "152462436113",
+      "JoinedMethod": {
+        "Value": "INVITED"
+      },
+      "JoinedTimestamp": "2017-03-16T12:56:28.69Z",
+      "Name": "SDL Munich RE",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "152462436113",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "SX",
+      "Customer": "MunichRE",
+      "AssignmentGroup": "Cloud Engineering Platform",
+      "OwningTeam": "CloudPlatform",
+      "ContactEmail": "nlinhares@rws.com",
+      "MFAToken": "GAKT0006602D",
+      "ProductLine": "SecureTranslation",
+      "ContactEmailList": "cloud.engineering.platform@rws.com"
+    },
+    "Alias": "sdl-munich-re",
+    "SwitchRoleLinks": [
+      "Automation-CrossAccount-Access",
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "Cloudoperationscrossaccountreservation",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountServiceAccount",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "DB-CrossAccount-Role",
+      "SecureTranslation-CrossAccountAccess",
+      "SecureTranslationCrossAccount"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "eu-central-1",
+        "InstanceCount": 10
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/245601757859",
+      "Email": "sdl.web.abnamronl.aws@sdl.com",
+      "Id": "245601757859",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2018-10-09T13:11:01.746Z",
+      "Name": "SDL Web ABNAmro",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "245601757859",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "TR",
+      "Customer": "ABN Amro",
+      "AssignmentGroup": "Tech Ops - GCT",
+      "OwningTeam": "GCT",
+      "ContactEmail": "vgopalakrishna@rws.com",
+      "ProductLine": "TridionSites",
+      "ContactEmailList": "cloud.operations.gct.team@rws.com"
+    },
+    "Alias": "sdlwebabnamro",
+    "SwitchRoleLinks": [
+      "Automation-CrossAccount-Access",
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOperationsGlobalCrossAccountServiceAccount",
+      "CloudOperationsGlobalCrossAccountTridionCustomerSupportTeam",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "COCRDSCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "DB-CrossAccount-Role",
+      "TridionSites-CrossAccountAccess",
+      "TridionSitesCrossAccount"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "eu-west-1",
+        "InstanceCount": 19
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/331037640516",
+      "Email": "sdl.web.bourneleisure.aws@sdl.com",
+      "Id": "331037640516",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2017-12-13T00:53:28.496Z",
+      "Name": "SDL Web BourneLeisure",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "331037640516",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "TR",
+      "Customer": "Bourne Leisure",
+      "AssignmentGroup": "Tech Ops - GCT",
+      "OwningTeam": "GCT",
+      "ContactEmail": "vgopalakrishna@rws.com",
+      "ProductLine": "TridionSites",
+      "ContactEmailList": "cloud.operations.gct.team@rws.com"
+    },
+    "Alias": "sdlwebbourneleisure",
+    "SwitchRoleLinks": [
+      "Autoation-CrossAccount-Access",
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOperationsGlobalCrossAccountServiceAccount",
+      "CloudOperationsGlobalCrossAccountTridionCustomerSupportTeam",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "COCRDSCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "TridionSites-CrossAccountAccess",
+      "TridionSitesCrossAccount"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "eu-west-1",
+        "InstanceCount": 14
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/719074614758",
+      "Email": "sdl.web.gocompare.aws@sdl.com",
+      "Id": "719074614758",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2017-08-31T11:03:04.8440001Z",
+      "Name": "SDL Web GoCompare",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "719074614758",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "TR",
+      "Customer": "Go Compare",
+      "AssignmentGroup": "Tech Ops - GCT",
+      "OwningTeam": "GCT",
+      "ContactEmail": "vgopalakrishna@rws.com",
+      "ProductLine": "TridionSites",
+      "ContactEmailList": "cloud.operations.gct.team@rws.com"
+    },
+    "Alias": "sdlwebgocompare",
+    "SwitchRoleLinks": [
+      "Automation-CrossAccount-Access",
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOperationsGlobalCrossAccountServiceAccount",
+      "CloudOperationsGlobalCrossAccountTridionCustomerSupportTeam",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "COCRDSCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "DB-CrossAcount-Role",
+      "TridionSites-CrossAccountAccess",
+      "TridionSitesCrossAccount"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "eu-west-1",
+        "InstanceCount": 19
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/675954863437",
+      "Email": "sdl.MultiTransTMS.aws@sdl.com",
+      "Id": "675954863437",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2018-10-09T10:23:44.2880001Z",
+      "Name": "SDL Web MultiTransTMS",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "675954863437",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "ZS",
+      "Customer": "NA",
+      "AssignmentGroup": "CO - Machine Trans Prod",
+      "OwningTeam": "MT",
+      "ContactEmail": "nnarayanappa@rws.com",
+      "MFAToken": "GAKT00066085",
+      "ProductLine": "MultiTransTMS",
+      "ContactEmailList": "cloud.operations.mt@rws.com"
+    },
+    "Alias": "sdlwebmultitranstms",
+    "SwitchRoleLinks": [
+      "Automation-CrossAccount-Access",
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOperationsGlobalCrossAccountServiceAccount",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "DB-CrossAccount-Role",
+      "MTCrossAccountAccess",
+      "MultiTransTMSCrossAccount"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "eu-west-2",
+        "InstanceCount": 4
+      },
+      {
+        "Region": "eu-west-1",
+        "InstanceCount": 9
+      },
+      {
+        "Region": "ca-central-1",
+        "InstanceCount": 6
+      },
+      {
+        "Region": "eu-central-1",
+        "InstanceCount": 4
+      },
+      {
+        "Region": "us-east-1",
+        "InstanceCount": 2
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/845364202509",
+      "Email": "sdl.web.omronus.aws@sdl.com",
+      "Id": "845364202509",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2019-03-05T09:27:50.213Z",
+      "Name": "SDL Web OmronUS",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "845364202509",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "TR",
+      "Customer": "Omron",
+      "AssignmentGroup": "Tech Ops - GCT",
+      "OwningTeam": "GCT",
+      "ContactEmail": "vgopalakrishna@rws.com",
+      "MFAToken": "GAKT00065FEA",
+      "ProductLine": "TridionSites",
+      "ContactEmailList": "cloud.operations.gct.team@rws.com"
+    },
+    "Alias": "sdlwebomronus",
+    "SwitchRoleLinks": [
+      "Automation-CrossAccount-Access",
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOperationsGlobalCrossAccountServiceAccount",
+      "CloudOperationsGlobalCrossAccountTridionCustomerSupportTeam",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "COCRDSCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "DB-CrossAccount-Role",
+      "TridionSites-CrossAccountAccess",
+      "TridionSitesCrossAccount"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "us-west-2",
+        "InstanceCount": 12
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/529170482687",
+      "Email": "sdlcptpoc@sdl.com",
+      "Id": "529170482687",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2017-10-09T10:11:37.7190001Z",
+      "Name": "SDL Web sdlcptpoc",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "529170482687",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "DG",
+      "Customer": "NA",
+      "AssignmentGroup": "Cloud Engineering Platform",
+      "OwningTeam": "CloudPlatform",
+      "ContactEmail": "nlinhares@rws.com",
+      "MFAToken": "GAKT00065FD4",
+      "ProductLine": "SharedServices",
+      "ContactEmailList": "cloud.engineering.platform@rws.com"
+    },
+    "Alias": "sdlcptpoc",
+    "SwitchRoleLinks": [
+      "Automation-CrossAccount-Access",
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOperationsGlobalCrossAccountServiceAccount",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "eu-central-1",
+        "InstanceCount": 5
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/306505126775",
+      "Email": "sdlcustsolpoc@sdl.com",
+      "Id": "306505126775",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2017-11-06T12:30:30.6989998Z",
+      "Name": "SDL Web sdlcustsolpoc",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "306505126775",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "TR",
+      "Customer": "NA",
+      "AssignmentGroup": "Cloud Engineering Custom Solutions",
+      "OwningTeam": "CustomSolutions",
+      "ContactEmail": "vgopalakrishna@rws.com",
+      "ProductLine": "SharedServices",
+      "ContactEmailList": "cloud.engineering.custom.solutions@rws.com"
+    },
+    "Alias": "sdlwebsdlcustsolpoc",
+    "SwitchRoleLinks": [
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCustsolPoC",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount"
+    ],
+    "RegionsDeployed": [],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/288424186606",
+      "Email": "sdleptppoc@sdl.com",
+      "Id": "288424186606",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2017-11-06T11:50:26.7469999Z",
+      "Name": "SDL Web sdleptppoc",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "288424186606",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "EP",
+      "Customer": "NA",
+      "AssignmentGroup": "Tech Ops - EPTP",
+      "OwningTeam": "EPTP",
+      "ContactEmail": "nnarayanappa@rws.com",
+      "ProductLine": "SharedServices",
+      "ContactEmailList": "cloud.operations.eptp.team@rws.com"
+    },
+    "Alias": "sdlwebsdleptppoc",
+    "SwitchRoleLinks": [
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountEptpPoc",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount"
+    ],
+    "RegionsDeployed": [],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/533223419972",
+      "Email": "sdlgctpoc@sdl.com",
+      "Id": "533223419972",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2017-11-06T12:07:50.7039999Z",
+      "Name": "SDL Web sdlgctpoc",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "533223419972",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "DG",
+      "Customer": "NA",
+      "AssignmentGroup": "Tech Ops - GCT",
+      "OwningTeam": "GCT",
+      "ContactEmail": "vgopalakrishna@rws.com",
+      "MFAToken": "GAKT00066024",
+      "ProductLine": "SharedServices",
+      "ContactEmailList": "cloud.operations.gct.team@rws.com"
+    },
+    "Alias": "cloudopsgcttraining",
+    "SwitchRoleLinks": [
+      "Automation-CrossAccount-Access",
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountGctPoc",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountServiceAccount",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "JenkinsRoleName",
+      "TridionSites-CrossAccountAccess"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "eu-west-1",
+        "InstanceCount": 1
+      },
+      {
+        "Region": "us-west-2",
+        "InstanceCount": 14
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/910908075831",
+      "Email": "sdllcmtpoc@sdl.com",
+      "Id": "910908075831",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2017-11-06T12:18:07.0639998Z",
+      "Name": "SDL Web sdllcmtpoc",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "910908075831",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "GW",
+      "Customer": "NA",
+      "AssignmentGroup": "CO - Machine Trans Prod",
+      "OwningTeam": "MT",
+      "ContactEmail": "nnarayanappa@rws.com",
+      "ProductLine": "LanguageCloud",
+      "ContactEmailList": "cloud.operations.mt@rws.com"
+    },
+    "Alias": "sdlwebsdllcmtpoc",
+    "SwitchRoleLinks": [
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountLcmtPoc",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "DB-CrossAccount-Role",
+      "KubeAdmin",
+      "LanguageCloudCrossAccount"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "eu-central-1",
+        "InstanceCount": 4
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/813436820534",
+      "Email": "sdl.web.svbnl.aws@sdl.com",
+      "Id": "813436820534",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2018-07-21T13:54:51.832Z",
+      "Name": "SDL Web SVBNL",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "813436820534",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "TR",
+      "Customer": "SVB",
+      "AssignmentGroup": "Tech Ops - GCT",
+      "OwningTeam": "GCT",
+      "ContactEmail": "vgopalakrishna@rws.com",
+      "MFAToken": "GAKT00065FCC",
+      "ProductLine": "TridionSites",
+      "ContactEmailList": "cloud.operations.gct.team@rws.com"
+    },
+    "Alias": "sdlwebsvbnl",
+    "SwitchRoleLinks": [
+      "Automation-CrossAccount-Access",
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOperationsGlobalCrossAccountServiceAccount",
+      "CloudOperationsGlobalCrossAccountTridionCustomerSupportTeam",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "COCRDSCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "DB-CrossAccount-Role",
+      "TridionSites-CrossAccountAccess",
+      "TridionSitesCrossAccount"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "eu-west-1",
+        "InstanceCount": 29
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/840032482345",
+      "Email": "tms.aws@sdl.com",
+      "Id": "840032482345",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2017-09-22T09:04:25.7320001Z",
+      "Name": "SDL Web TMS",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "840032482345",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "EP",
+      "Customer": "NA",
+      "AssignmentGroup": "Tech Ops - EPTP",
+      "OwningTeam": "EPTP",
+      "ContactEmail": "nnarayanappa@rws.com",
+      "MFAToken": "GAKT00065FCF",
+      "ProductLine": "TMS",
+      "ContactEmailList": "cloud.operations.eptp.team@rws.com"
+    },
+    "Alias": "sdlwebtms",
+    "SwitchRoleLinks": [
+      "Automation-CrossAccount-Access",
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOperationsGlobalCrossAccountServiceAccount",
+      "CloudOperationsGlobalCrossAccountTMSadmin",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "DB-CrossAccount-Role",
+      "TMS-CrossAccountAccess",
+      "TMSCrossAccount"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "eu-west-2",
+        "InstanceCount": 28
+      },
+      {
+        "Region": "eu-central-1",
+        "InstanceCount": 42
+      },
+      {
+        "Region": "us-west-2",
+        "InstanceCount": 27
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/645681595280",
+      "Email": "sdl.web.universalstudio.aws@sdl.com",
+      "Id": "645681595280",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2019-01-09T13:44:55.8029999Z",
+      "Name": "SDL Web universal",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "645681595280",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "TR",
+      "Customer": "Universal Studios",
+      "AssignmentGroup": "Tech Ops - GCT",
+      "OwningTeam": "GCT",
+      "ContactEmail": "vgopalakrishna@rws.com",
+      "ProductLine": "TridionSites",
+      "ContactEmailList": "cloud.operations.gct.team@rws.com"
+    },
+    "Alias": "sdlwebuniversal",
+    "SwitchRoleLinks": [
+      "Automation-CrossAccount-Access",
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOperationsGlobalCrossAccountServiceAccount",
+      "CloudOperationsGlobalCrossAccountTridionCustomerSupportTeam",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "COCRDSCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "DB-CrossAccount-Role",
+      "TridionSites-CrossAccountAccess",
+      "TridionSitesCrossAccount"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "us-west-2",
+        "InstanceCount": 18
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/094537766348",
+      "Email": "sdl.web.sdldisneyus.aws@sdl.com",
+      "Id": "094537766348",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2020-05-28T14:56:37.7809998Z",
+      "Name": "SDLDisneyUS",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "094537766348",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "TR",
+      "Customer": "Disney Parks",
+      "AssignmentGroup": "Tech Ops - GCT",
+      "OwningTeam": "GCT",
+      "ContactEmail": "vgopalakrishna@rws.com",
+      "ProductLine": "TridionSites",
+      "ContactEmailList": "cloud.operations.gct.team@rws.com"
+    },
+    "Alias": "sdldisneyus",
+    "SwitchRoleLinks": [
+      "Automation-CrossAccount-Access",
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudMatiq",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountCyberSecurityTeam",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOperationsGlobalCrossAccountServiceAccount",
+      "CloudOperationsGlobalCrossAccountTridionCustomerSupportTeam",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "COCRDSCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "DB-CrossAccount-Role",
+      "TridionSites-CrossAccountAccess",
+      "TridionSitesCrossAccount"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "us-west-2",
+        "InstanceCount": 77
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/145293054240",
+      "Email": "sdl.lc.prod@sdl.com",
+      "Id": "145293054240",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2021-01-12T15:05:40.4920001Z",
+      "Name": "sdllcprod",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "145293054240",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "GW",
+      "Customer": "NA",
+      "AssignmentGroup": "CO - Machine Trans Prod",
+      "OwningTeam": "MT",
+      "ContactEmail": "nnarayanappa@rws.com",
+      "MFAToken": "GAKT0008DA8B",
+      "ProductLine": "LanguageCloud",
+      "ContactEmailList": "cloud.operations.mt@rws.com"
+    },
+    "Alias": "sdllcprod",
+    "SwitchRoleLinks": [
+      "Automation-CrossAccount-Access",
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountDevelopmentTeam",
+      "CloudOperationsGlobalCrossAccountDevelopmentTeam2",
+      "CloudOperationsGlobalCrossAccountDevelopmentTeamBilling",
+      "CloudOperationsGlobalCrossAccountLCDevOps",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOperationsGlobalCrossAccountsystemmanagerLCTeam",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "DB-CrossAccount-Role",
+      "LanguageCloudCrossAccount",
+      "LC-CrossAccount-Access",
+      "lc-s3-cost-allocation-role",
+      "lcaccountss3readaccesscrossaccount",
+      "lcprodcloudtrailrole",
+      "lcprodreadaccess",
+      "RDS-read-enhanced-monitor",
+      "rdscrossrole",
+      "s3readaccess-lcaccountsscrossaccount"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "eu-west-1",
+        "InstanceCount": 1
+      },
+      {
+        "Region": "eu-central-1",
+        "InstanceCount": 113
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/901861101799",
+      "Email": "sdl.lc.pte@sdl.com",
+      "Id": "901861101799",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2021-01-12T14:34:57.7829999Z",
+      "Name": "sdllcpte",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "901861101799",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "GW",
+      "Customer": "NA",
+      "AssignmentGroup": "CO - Machine Trans Prod",
+      "OwningTeam": "MT",
+      "ContactEmail": "nnarayanappa@rws.com",
+      "MFAToken": "GAKT00065FE0",
+      "ProductLine": "LanguageCloud",
+      "ContactEmailList": "cloud.operations.mt@rws.com"
+    },
+    "Alias": "sdllcpte",
+    "SwitchRoleLinks": [
+      "Automation-CrossAccount-Access",
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSBillingCustomAccess",
+      "AWSCloudFormationStackSetExecutionRole",
+      "AWSCustomServiceRoleForStartingAndStoppingAurora",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountAdminAutomation",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountDevelopmentTeam",
+      "CloudOperationsGlobalCrossAccountDevelopmentTeam2",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOperationsGlobalCrossAccountsystemmanagerLCTeam",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "DB-CrossAccount-Role",
+      "LanguageCloudCrossAccount",
+      "lc-s3-cost-allocation-role",
+      "lcaccountss3readaccesscrossaccount",
+      "MTCrossAccountAccess",
+      "RDS-read-enhanced-monitor",
+      "rdscrossrole",
+      "s3readaccess-lcaccountsscrossaccount"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "eu-central-1",
+        "InstanceCount": 70
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/930078336129",
+      "Email": "sdl.lc.stg@sdl.com",
+      "Id": "930078336129",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2021-01-12T14:54:07.805Z",
+      "Name": "sdllcstg",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "930078336129",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "GW",
+      "Customer": "NA",
+      "AssignmentGroup": "CO - Machine Trans Prod",
+      "OwningTeam": "MT",
+      "ContactEmail": "nnarayanappa@rws.com",
+      "MFAToken": "GAKT0008DDF3",
+      "ProductLine": "LanguageCloud",
+      "ContactEmailList": "cloud.operations.mt@rws.com"
+    },
+    "Alias": "sdllcstg",
+    "SwitchRoleLinks": [
+      "Automation-CrossAccount-Access",
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "AWSCustomServiceRoleForStartingAndStoppingAurora",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountDevelopmentTeam",
+      "CloudOperationsGlobalCrossAccountDevelopmentTeam2",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOperationsGlobalCrossAccountsystemmanagerLCTeam",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "DB-CrossAccount-Role",
+      "LanguageCloudCrossAccount",
+      "LC-CrossAccount-Access",
+      "lc-s3-cost-allocation-role",
+      "lcaccountss3readaccesscrossaccount",
+      "RDS-read-enhanced-monitor",
+      "rdscrossrole",
+      "readonlyaccesstoLC",
+      "s3readaccess-lcaccountsscrossaccount"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "eu-central-1",
+        "InstanceCount": 50
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/548588194512",
+      "Email": "sdl.lc.uat@sdl.com",
+      "Id": "548588194512",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2021-01-12T14:43:17.9319999Z",
+      "Name": "sdllcuat",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "548588194512",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "GW",
+      "Customer": "NA",
+      "AssignmentGroup": "CO - Machine Trans Prod",
+      "OwningTeam": "MT",
+      "ContactEmail": "nnarayanappa@rws.com",
+      "ProductLine": "LanguageCloud",
+      "ContactEmailList": "cloud.operations.mt@rws.com"
+    },
+    "Alias": "sdllcuat",
+    "SwitchRoleLinks": [
+      "Automation-CrossAccount-Access",
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "AWSCustomServiceRoleForStartingAndStoppingAurora",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountDevelopmentTeam",
+      "CloudOperationsGlobalCrossAccountDevelopmentTeam2",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "DB-CrossAccount-Role",
+      "LanguageCloudCrossAccount",
+      "LC-CrossAccount-Access",
+      "lc-s3-cost-allocation-role",
+      "lcaccountss3readaccesscrossaccount",
+      "LCUATAdmin",
+      "RDS-read-enhanced-monitor",
+      "rdscrossrole",
+      "s3readaccess-lcaccountsscrossaccount",
+      "sdllcuatcrosss3role"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "eu-central-1",
+        "InstanceCount": 42
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/381658401090",
+      "Email": "worldserver.aws@sdl.com",
+      "Id": "381658401090",
+      "JoinedMethod": {
+        "Value": "INVITED"
+      },
+      "JoinedTimestamp": "2016-10-11T13:05:45Z",
+      "Name": "sdlworldserver",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "381658401090",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "EP",
+      "Customer": "NA",
+      "AssignmentGroup": "Tech Ops - EPTP",
+      "OwningTeam": "EPTP",
+      "ContactEmail": "nnarayanappa@rws.com",
+      "ProductLine": "WorldServer",
+      "ContactEmailList": "cloud.operations.eptp.team@rws.com"
+    },
+    "Alias": "sdlworldserver",
+    "SwitchRoleLinks": [
+      "Automation-CrossAccount-Access",
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountDBA",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOperationsGlobalCrossAccountServiceAccount",
+      "CloudOperationsGlobalCrossAccountWorldServeradmin",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "DB-CrossAccount-Role",
+      "TeevityPollerRole",
+      "WorldServerCrossAccount",
+      "WS-CrossAccountAccess"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "us-east-2",
+        "InstanceCount": 3
+      },
+      {
+        "Region": "us-west-2",
+        "InstanceCount": 47
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/767397855156",
+      "Email": "Cloud.Operations.Aws+SignalAI@rws.com",
+      "Id": "767397855156",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2024-04-08T10:28:00.2009999Z",
+      "Name": "Signal AI",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "767397855156",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "LW",
+      "Customer": "NA",
+      "AssignmentGroup": "CO - Machine Trans Prod",
+      "OwningTeam": "MT",
+      "ContactEmail": "nnarayanappa@rws.com",
+      "ProductLine": "LanguageWeaver",
+      "ContactEmailList": "cloud.operations.mt@sdl.com"
+    },
+    "Alias": "signalai-767397855156",
+    "SwitchRoleLinks": [
+      "Automation-CrossAccount-Access",
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "DB-CrossAccount-Role",
+      "LanguageWeaverCrossAccount",
+      "MTCrossAccountAccess"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "eu-central-1",
+        "InstanceCount": 89
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/913872413742",
+      "Email": "sdl.web.starbuckspoc.aws@sdl.com",
+      "Id": "913872413742",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2019-07-03T11:34:55.831Z",
+      "Name": "starbucks",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "913872413742",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "XY",
+      "Customer": "Starbucks",
+      "AssignmentGroup": "Tech Ops - GCT",
+      "OwningTeam": "GCT",
+      "ContactEmail": "vgopalakrishna@rws.com",
+      "ProductLine": "TridionDocs",
+      "ContactEmailList": "cloud.operations.gct.team@rws.com"
+    },
+    "Alias": "starbucksprod",
+    "SwitchRoleLinks": [
+      "Automation-CrossAccount-Access",
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOperationsGlobalCrossAccountServiceAccount",
+      "CloudOperationsGlobalCrossAccountTecflairMonitoring",
+      "CloudOperationsGlobalCrossAccountTridionCustomerSupportTeam",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "DB-CrossAccount-Role",
+      "TridionDocs-CrossAccountAccess",
+      "TridionDocsCrossAccount"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "us-west-2",
+        "InstanceCount": 15
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/644729817624",
+      "Email": "Cloud.Operations.Aws+Steamhaus-LWE-Auto01@rws.com",
+      "Id": "644729817624",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2026-01-21T15:07:56.3069999Z",
+      "Name": "Steamhaus-LWE-Auto01",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "644729817624",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "LW",
+      "Customer": "NA",
+      "AssignmentGroup": "CO - Machine Trans Prod",
+      "OwningTeam": "MT",
+      "ContactEmail": "nnarayanappa@rws.com",
+      "ProductLine": "LanguageWeaver",
+      "ContactEmailList": "cloud.operations.mt@rws.com"
+    },
+    "Alias": "steamhaus-lwe-auto01-644729817624",
+    "SwitchRoleLinks": [
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "LanguageWeaverCrossAccount"
+    ],
+    "RegionsDeployed": [],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/721212970147",
+      "Email": "Cloud.Operations.Aws+Steamhaus-LWE-Auto02@rws.com",
+      "Id": "721212970147",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2026-01-21T15:12:23.3559999Z",
+      "Name": "Steamhaus-LWE-Auto02",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "721212970147",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "LW",
+      "Customer": "NA",
+      "AssignmentGroup": "CO - Machine Trans Prod",
+      "OwningTeam": "MT",
+      "ContactEmail": "nnarayanappa@rws.com",
+      "ProductLine": "LanguageWeaver",
+      "ContactEmailList": "cloud.operations.mt@rws.com"
+    },
+    "Alias": "steamhaus-lwe-auto02-721212970147",
+    "SwitchRoleLinks": [
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "LanguageWeaverCrossAccount"
+    ],
+    "RegionsDeployed": [],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/863518449252",
+      "Email": "Cloud.Operations.Aws+SupportScars@rws.com",
+      "Id": "863518449252",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2024-09-26T14:34:47.065Z",
+      "Name": "Support Scars",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "863518449252",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "DG",
+      "Customer": "NA",
+      "AssignmentGroup": "Cloud Engineering Platform",
+      "OwningTeam": "CloudPlatform",
+      "ContactEmail": "faziz@rws.com",
+      "ProductLine": "NA",
+      "ContactEmailList": "cloud.engineering.platform@sdl.com"
+    },
+    "Alias": "supportscars-863518449252",
+    "SwitchRoleLinks": [
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "TridionCustomerSupportTeam_Admin"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "eu-west-1",
+        "InstanceCount": 1
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/330786910143",
+      "Email": "Cloud.Operations.Aws+tridionrnd@rws.com",
+      "Id": "330786910143",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2025-06-13T07:35:24.4219999Z",
+      "Name": "tridion rnd",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "330786910143",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "XY",
+      "Customer": "NA",
+      "AssignmentGroup": "Tridion Docs SCTCA",
+      "OwningTeam": "GCT",
+      "ContactEmail": "tridionsystemteam@rws.com",
+      "ProductLine": "TridionDocs",
+      "ContactEmailList": "tridionsystemteam@rws.com"
+    },
+    "Alias": "tridion-rnd-330786910143",
+    "SwitchRoleLinks": [
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "TridionDocsCrossAccount"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "eu-west-1",
+        "InstanceCount": 1
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/552653068225",
+      "Email": "Cloud.Operations.Aws+tridionrndinfra@rws.com",
+      "Id": "552653068225",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2025-06-13T08:29:16.3469998Z",
+      "Name": "tridion-rnd-management",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "552653068225",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "XY",
+      "Customer": "NA",
+      "AssignmentGroup": "Tech Ops - GCT",
+      "OwningTeam": "GCT",
+      "ContactEmail": "tridionsystemteam@rws.com",
+      "ProductLine": "TridionDocs",
+      "ContactEmailList": "tridionsystemteam@rws.com"
+    },
+    "Alias": "tridion-rnd-management-552653068225",
+    "SwitchRoleLinks": [
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "TridionDocsCrossAccount"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "eu-west-1",
+        "InstanceCount": 5
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/008971632854",
+      "Email": "Cloud.Operations.Aws+TridionDocsGenius@rws.com",
+      "Id": "008971632854",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2024-07-22T17:17:10.8800001Z",
+      "Name": "TridionDocsGenius",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "008971632854",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "XY",
+      "Customer": "NA",
+      "AssignmentGroup": "Tech Ops - GCT",
+      "OwningTeam": "GCT",
+      "ContactEmail": "vgopalakrishna@rws.com",
+      "ProductLine": "TridionDocs",
+      "ContactEmailList": "cloud.operations.gct.team@rws.com"
+    },
+    "Alias": "tridiondocsgenius-008971632854",
+    "SwitchRoleLinks": [
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOperationsGlobalCrossAccountTridionCustomerSupportTeam",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "DocsGeniusAICloudlimitedreadonlyaccessrole",
+      "TridionDocsCrossAccount",
+      "ViewOnly_Test"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "eu-west-1",
+        "InstanceCount": 9
+      },
+      {
+        "Region": "eu-central-1",
+        "InstanceCount": 14
+      },
+      {
+        "Region": "us-west-2",
+        "InstanceCount": 8
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/771843027596",
+      "Email": "Tridion.Docs.uipath.aws@sdl.com",
+      "Id": "771843027596",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2022-08-24T06:57:45.088Z",
+      "Name": "UIPath",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "771843027596",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "XY",
+      "Customer": "UIPath",
+      "AssignmentGroup": "Tech Ops - GCT",
+      "OwningTeam": "GCT",
+      "ContactEmail": "vgopalakrishna@rws.com",
+      "ProductLine": "TridionDocs",
+      "ContactEmailList": "cloud.operations.gct.team@rws.com"
+    },
+    "Alias": "uipath-771843027596",
+    "SwitchRoleLinks": [
+      "Automation-CrossAccount-Access",
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOperationsGlobalCrossAccountTridionCustomerSupportTeam",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "DB-CrossAccount-Role",
+      "TridionDocsCrossAccount",
+      "TridionSites-CrossAccountAccess"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "eu-west-1",
+        "InstanceCount": 22
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/460232560112",
+      "Email": "Cloud.Operations.Aws+UKMP@rws.com",
+      "Id": "460232560112",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2025-03-26T10:51:14.6459999Z",
+      "Name": "UKMP",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "460232560112",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "LW",
+      "Customer": "NA",
+      "AssignmentGroup": "CO - Machine Trans Prod",
+      "OwningTeam": "MT",
+      "ContactEmail": "nnarayanappa@rws.com",
+      "ProductLine": "LanguageWeaver",
+      "ContactEmailList": "cloud.operations.mt@rws.com"
+    },
+    "Alias": "ukmp-460232560112",
+    "SwitchRoleLinks": [
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "LanguageWeaverCrossAccount"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "eu-west-2",
+        "InstanceCount": 8
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/423052382086",
+      "Email": "Tridion.Sites.UnitedAirlines.aws@sdl.com",
+      "Id": "423052382086",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2023-08-30T16:00:57.733Z",
+      "Name": "UnitedAirlines",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "423052382086",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "TR",
+      "Customer": "NA",
+      "AssignmentGroup": "Tech Ops - GCT",
+      "OwningTeam": "GCT",
+      "ContactEmail": "vgopalakrishna@rws.com",
+      "MFAToken": "GALT00AC6CB8",
+      "ProductLine": "TridionSites",
+      "ContactEmailList": "cloud.operations.gct.team@rws.com"
+    },
+    "Alias": "unitedairlines-423052382086",
+    "SwitchRoleLinks": [
+      "Automation-CrossAccount-Access",
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOperationsGlobalCrossAccountTridionCustomerSupportTeam",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "COCRDSCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "DB-CrossAccount-Role",
+      "TridionSites-CrossAccountAccess",
+      "TridionSitesCrossAccount"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "us-east-1",
+        "InstanceCount": 40
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  },
+  {
+    "Account": {
+      "Arn": "arn:aws:organizations::212651334803:account/o-g13f3ib3te/881490095923",
+      "Email": "Cloud.Operations.Aws+WFInfomax@rws.com",
+      "Id": "881490095923",
+      "JoinedMethod": {
+        "Value": "CREATED"
+      },
+      "JoinedTimestamp": "2025-03-11T17:00:00.272Z",
+      "Name": "WFInfomax",
+      "Status": {
+        "Value": "ACTIVE"
+      }
+    },
+    "AccountId": "881490095923",
+    "Tags": {
+      "Department": "Cloud Operations",
+      "Email": "",
+      "CostCenter": "XY",
+      "Customer": "NA",
+      "AssignmentGroup": "Tech Ops - GCT",
+      "OwningTeam": "GCT",
+      "ContactEmail": "vgopalakrishna@rws.com",
+      "ProductLine": "TridionSites",
+      "ContactEmailList": "cloud.operations.gct.team@rws.com"
+    },
+    "Alias": "wfinfomax-881490095923",
+    "SwitchRoleLinks": [
+      "AutomationCrossAccount",
+      "AWS-SystemsManager-AutomationExecutionRole",
+      "AWSCloudFormationStackSetExecutionRole",
+      "CloudOperationsGlobalCrossAccountAdmin",
+      "CloudOperationsGlobalCrossAccountCloudApps",
+      "CloudOperationsGlobalCrossAccountCloudAppsCOC",
+      "CloudOperationsGlobalCrossAccountCloudOpsCOC",
+      "CloudOperationsGlobalCrossAccountMSTechOps",
+      "CloudOperationsGlobalCrossAccountPowerUser",
+      "CloudOperationsGlobalCrossAccountProductionServices",
+      "CloudOperationsGlobalCrossAccountPRTG",
+      "CloudOpsSecurityCrossAccount",
+      "CloudOpsToolsCrossAccount",
+      "COCCrossAccount",
+      "COCRDSCrossAccount",
+      "CustomSolutionsCrossAccount",
+      "DatabaseCrossAccount",
+      "TridionSitesCrossAccount"
+    ],
+    "RegionsDeployed": [
+      {
+        "Region": "us-east-1",
+        "InstanceCount": 40
+      }
+    ],
+    "SupportLevel": "No Support Subscription"
+  }
+]

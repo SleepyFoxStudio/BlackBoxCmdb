@@ -13,7 +13,10 @@
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "AWS_PROFILE": "adamDeployments",
+        "AWS_SHARED_CREDENTIALS_FILE": "C:\\Users\\mrichardson\\.aws\\credentials",
+        "AWS_CONFIG_FILE": "C:\\Users\\mrichardson\\.aws\\config"
       },
       "dotnetRunMessages": true,
       "applicationUrl": "https://localhost:7246;http://localhost:5003"
@@ -35,9 +38,12 @@
       "launchUrl": "https://localhost:7246",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
-        "ASPNETCORE_URLS": "https://localhost:7246;http://localhost:5003"
+        "ASPNETCORE_URLS": "https://localhost:7246;http://localhost:5003",
+        "AWS_PROFILE": "adamDeployments",
+        "AWS_SHARED_CREDENTIALS_FILE": "/mnt/c/Users/mrichardson/.aws/credentials",
+        "AWS_CONFIG_FILE": "/mnt/c/Users/mrichardson/.aws/config"
       },
-      "distributionName": ""
+      "distributionName": "Ubuntu"
     }
   },
   "$schema": "https://json.schemastore.org/launchsettings.json"
