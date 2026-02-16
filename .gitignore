@@ -270,3 +270,4 @@ AppD.DCAM/src/hostsettings.json
 #.DS_Store
 local-testing.ps1
 /packer-image-creation/test.ps1
+/data.json
