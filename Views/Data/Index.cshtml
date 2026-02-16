@@ -6,20 +6,14 @@
 <!-- Your Grid -->
 <div id="myGrid" class="ag-theme-alpine" style="height: 400px; width: 100%;"></div>
 
-
-
-https://localhost:7246/api/GetData/server
-<script>
-            <div id="myGrid" class="ag-theme-alpine" style="height: 400px; width: 100%;"></div>
-
-    <script src="https://cdn.jsdelivr.net/npm/ag-grid-community/dist/ag-grid-community.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/ag-grid-community/dist/ag-grid-community.min.js"></script>
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         const gridDiv = document.querySelector('#myGrid');
 
         // 1️⃣ Fetch data from your API first
-        fetch("/api/GetData/test", { credentials: "include" }) // include cookies for login
+        fetch("/api/GetData/server")
             .then(res => {
                 if (!res.ok) throw new Error("Failed to fetch grid data");
                 return res.json();
@@ -27,18 +21,13 @@ https://localhost:7246/api/GetData/server
             .then(rowData => {
                 // 2️⃣ Initialize grid with fetched data
                 const gridOptions = {
-                    columnDefs: [
-                        { field: "make" },
-                        { field: "model" },
-                        { field: "price" },
-                        { field: "electric" }
-                    ],
+                    columnDefs: rowData.Columns, // ✅ use the fetched data here,
                     defaultColDef: {
                         flex: 1,
                         sortable: true,
                         filter: true
                     },
-                    rowData: rowData, // ✅ use the fetched data here
+                    rowData: rowData.Data, // ✅ use the fetched data here
                     overlayLoadingTemplate: '<span class="ag-overlay-loading-center">Loading...</span>',
                     overlayNoRowsTemplate: '<span class="ag-overlay-loading-center">No data available</span>'
                 };

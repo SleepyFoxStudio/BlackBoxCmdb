@@ -17,14 +17,17 @@ builder.Services.AddSingleton<DataService>(sp =>
 {
     var s3Client = sp.GetRequiredService<IAmazonS3>();
     string bucketName = "ceat-defaults";
-    string s3Key = "cloud-ops-aws-accounts.json";
+    string s3Key = "awesome.json";
 
     var service = new DataService(s3Client, bucketName, s3Key);
     service.LoadAsync().GetAwaiter().GetResult(); // Load at startup
     return service;
 });
 
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllersWithViews().AddJsonOptions(options =>
+{
+    options.JsonSerializerOptions.PropertyNamingPolicy = null;
+});
 
 builder.Services.AddAuthentication(options =>
 {

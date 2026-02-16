@@ -10,6 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="awesome.configurationmanagementdatabase" Version="1.0.120" />
     <PackageReference Include="AWSSDK.Extensions.NETCore.Setup" Version="4.0.3.22" />
     <PackageReference Include="AWSSDK.S3" Version="4.0.18.5" />
     <PackageReference Include="AWSSDK.SecurityToken" Version="4.0.5.9" />

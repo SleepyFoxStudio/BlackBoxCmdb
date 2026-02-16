@@ -11,7 +11,7 @@ public class DataController(DataService dataService) : Controller
     {
         var userName = User.Identity?.Name;
         ViewData["UserName"] = userName;
-        ViewData["DataJson"] = JsonSerializer.Serialize(dataService.Data, new JsonSerializerOptions { WriteIndented = true });
+        ViewData["DataJson"] = JsonSerializer.Serialize(dataService.Data, new JsonSerializerOptions { PropertyNamingPolicy = null, WriteIndented = true });
         return View();
     }
 }

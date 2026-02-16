@@ -24,34 +24,34 @@ namespace BlackBoxCmdb
 
         public async Task LoadAsync()
         {
-            if (File.Exists(_localPath))
+            //if (File.Exists(_localPath))
+            //{
+            //    Console.WriteLine("Loading data from local file...");
+            //    var json = await File.ReadAllTextAsync(_localPath);
+            //    Data = JsonSerializer.Deserialize<dynamic>(json);
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Local file not found. Loading from S3...");
+            var stsClient = new AmazonSecurityTokenServiceClient(Amazon.RegionEndpoint.EUWest1);
+            var newTempCreds = await stsClient.AssumeRoleAsync(new AssumeRoleRequest
             {
-                Console.WriteLine("Loading data from local file...");
-                var json = await File.ReadAllTextAsync(_localPath);
-                Data = JsonSerializer.Deserialize<dynamic>(json);
-            }
-            else
-            {
-                Console.WriteLine("Local file not found. Loading from S3...");
-                var stsClient = new AmazonSecurityTokenServiceClient(Amazon.RegionEndpoint.EUWest1);
-                var newTempCreds = await stsClient.AssumeRoleAsync(new AssumeRoleRequest
-                {
-                    DurationSeconds = 3600,
-                    RoleArn = $"arn:aws:iam::649803627656:role/adam-subaccount-role",
-                    RoleSessionName = "SsmDistributorCreateSchedules"
-                });
+                DurationSeconds = 3600,
+                RoleArn = $"arn:aws:iam::649803627656:role/adam-subaccount-role",
+                RoleSessionName = "Cmdb"
+            });
 
-                var client = new AmazonS3Client(newTempCreds.Credentials, Amazon.RegionEndpoint.EUWest1);
+            var client = new AmazonS3Client(newTempCreds.Credentials, Amazon.RegionEndpoint.EUWest1);
 
-                var response = await client.GetObjectAsync(_bucketName, _s3Key);
-                using var reader = new StreamReader(response.ResponseStream);
-                var json = await reader.ReadToEndAsync();
+            var response = await client.GetObjectAsync(_bucketName, _s3Key);
+            using var reader = new StreamReader(response.ResponseStream);
+            var json = await reader.ReadToEndAsync();
 
-                // Save locally for next time
-                await File.WriteAllTextAsync(_localPath, json);
+            // Save locally for next time
+            await File.WriteAllTextAsync(_localPath, json);
 
-                Data = JsonSerializer.Deserialize<dynamic>(json);
-            }
+            Data = JsonSerializer.Deserialize<dynamic>(json);
         }
+        //}
     }
 }
