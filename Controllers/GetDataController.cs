@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Org.BouncyCastle.Tls;
 using System.Dynamic;
+using System.Linq;
 using System.Reflection;
 using System.Text.Json;
 using static GetDataController;
@@ -13,19 +14,19 @@ using static GetDataController;
 [Authorize]
 public class GetDataController(DataService dataService) : ControllerBase
 {
-    [HttpGet("{type}")]
-    public IActionResult GetData(string type)
+    [HttpGet("server")]
+    [HttpPost("server")]
+    public IActionResult GetData([FromBody] DataRequest request)
     {
-        return type?.ToLower() switch
-        {
-            "server" => Ok(GetServerData()),
-            "volume" => Ok(GetVolumeData()),
-            "test" => Ok(GetTestData()),
-            _ => NotFound()
-        };
+        return Ok(GetServerData(request));
     }
 
-    private object GetServerData()
+    public class DataRequest
+    {
+        public List<string> IncludeColumns { get; set; } = new List<string>();
+    }
+
+    private object GetServerData(DataRequest request)
     {
         List<Account> accountList = JsonSerializer.Deserialize<List<Account>>(dataService.Data);
         var tableData = new TableData();
@@ -37,7 +38,47 @@ public class GetDataController(DataService dataService) : ControllerBase
                 foreach (var server in serverGroup.Servers)
                 {
                     var serverName = server.Tags.SingleOrDefault(s => s.Key.Equals("Name", StringComparison.InvariantCultureIgnoreCase)).Value ?? server.Id;
-                    tableData.Data.Add(new {account.DataCentreType , account.AccountName,Name = serverName, server.AccountId, server.Region, ServerID = server.Id });
+                    var baseData = new Dictionary<string, object>
+                    {
+                        ["DataCentreType"] = account.DataCentreType,
+                        ["AccountName"] = account.AccountName,
+                        ["Name"] = serverName,
+                        ["AccountId"] = server.AccountId,
+                        ["Region"] = server.Region,
+                        ["ServerID"] = server.Id
+                    };
+
+                    // Start with a list of rows to add
+                    var dataItems = new List<Dictionary<string, object>>();
+
+                    if (request.IncludeColumns.Contains("Volume") && server.Volumes.Any())
+                    {
+                        // Create one row per volume
+                        foreach (var volume in server.Volumes)
+                        {
+                            // Copy base data
+                            var row = new Dictionary<string, object>(baseData)
+                            {
+                                ["VolumeId"] = volume.Id,
+                                ["VolumeIops"] = volume.Iops,
+                                ["VolumeLabel"] = volume.Label,
+                                ["VolumeCreated"] = volume.Created,
+                                ["VolumeSize"] = volume.Size,
+                                ["VolumeType"] = volume.Type
+                            };
+
+                            dataItems.Add(row);
+                        }
+                    }
+                    else
+                    {
+                        // No volumes, just add the base row
+                        dataItems.Add(new Dictionary<string, object>(baseData));
+                    }
+
+                    // Add to your table
+                    tableData.Data.AddRange(dataItems);
+
                 }
             }
         }
@@ -46,13 +87,12 @@ public class GetDataController(DataService dataService) : ControllerBase
 
         if (tableData.Data.Any())
         {
-            var firstItem = tableData.Data.First();
+            colTitles = tableData.Data
+    .SelectMany(row => row.Keys)  // flatten all keys from all rows
+    .Distinct()                   // remove duplicates
+    .ToList();
 
-            colTitles = firstItem
-                .GetType()
-                .GetProperties(BindingFlags.Public | BindingFlags.Instance)
-                .Select(p => p.Name)
-                .ToList();
+
         }
 
         foreach (var column in colTitles)

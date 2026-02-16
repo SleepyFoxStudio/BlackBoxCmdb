@@ -3,17 +3,37 @@
  *@
 
 
-<!-- Your Grid -->
+
+<div id="builder"></div>
+
+<div>
+    <label><input type="checkbox" class="columnToggle" value="Volume" /> Volume</label>
+    <label><input type="checkbox" class="columnToggle" value="Disk" /> Disk</label>
+    <label><input type="checkbox" class="columnToggle" value="Network" /> Network</label>
+</div>
+
+<form id="filterForm">
+</form>
+
+
 <div id="myGrid" class="ag-theme-alpine" style="height: 400px; width: 100%;"></div>
 
-<script src="https://cdn.jsdelivr.net/npm/ag-grid-community/dist/ag-grid-community.min.js"></script>
 
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
+    let gridInstance; // will hold the AG Grid instance
+    function fetchData() {
         const gridDiv = document.querySelector('#myGrid');
 
+        const payload = {
+            includeColumns: getSelectedColumns()
+        };
+
         // 1️⃣ Fetch data from your API first
-        fetch("/api/GetData/server")
+        fetch("/api/GetData/server", {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            })
             .then(res => {
                 if (!res.ok) throw new Error("Failed to fetch grid data");
                 return res.json();
@@ -33,7 +53,38 @@
                 };
 
                 // 3️⃣ Create the grid
-                agGrid.createGrid(gridDiv, gridOptions);
+                if (!gridInstance) {
+                    gridInstance = new agGrid.createGrid(gridDiv, gridOptions);
+                }
+                else{
+                    gridInstance.setGridOption("rowData", rowData.Data);
+                    gridInstance.setGridOption("columnDefs", rowData.Columns);
+                }
             });
+    }
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+        fetchData();
     });
+
+
+
+
+    // Event listeners
+    document.getElementById('filterForm').addEventListener('submit', e => {
+        e.preventDefault();
+        fetchData();
+    });
+
+    document.querySelectorAll('.columnToggle').forEach(cb => {
+        cb.addEventListener('change', fetchData);
+    });
+
+
+    function getSelectedColumns() {
+        return Array.from(document.querySelectorAll('.columnToggle:checked'))
+                    .map(cb => cb.value);
+    }
+
 </script>
