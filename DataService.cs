@@ -47,8 +47,8 @@ namespace BlackBoxCmdb
             using var reader = new StreamReader(response.ResponseStream);
             var json = await reader.ReadToEndAsync();
 
-            // Save locally for next time
-            await File.WriteAllTextAsync(_localPath, json);
+            //// Save locally for next time
+            //await File.WriteAllTextAsync(_localPath, json);
 
             Data = JsonSerializer.Deserialize<dynamic>(json);
         }
