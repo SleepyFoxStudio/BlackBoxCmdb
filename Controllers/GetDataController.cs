@@ -99,6 +99,7 @@ public class GetDataController(DataService dataService) : ControllerBase
         {
             dynamic col = new ExpandoObject();
             col.field = column;
+            col.width = 200;
             tableData.Columns.Add(col);
         }
 

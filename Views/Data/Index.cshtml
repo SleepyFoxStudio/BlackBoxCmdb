@@ -4,7 +4,7 @@
 
 
 
-<div id="builder"></div>
+<div id="rowCount"></div>
 
 <div>
     <label><input type="checkbox" class="columnToggle" value="Volume" /> Volume</label>
@@ -21,6 +21,15 @@
 
 <script>
     let gridInstance; // will hold the AG Grid instance
+
+
+    function updateFilteredCount() {
+      const filteredCount = gridInstance.getDisplayedRowCount();
+      document.getElementById('rowCount').innerText =
+        `Matching rows: ${filteredCount}`;
+    }
+
+
     function fetchData() {
         const gridDiv = document.querySelector('#myGrid');
 
@@ -41,11 +50,14 @@
             .then(rowData => {
                 // 2️⃣ Initialize grid with fetched data
                 const gridOptions = {
+                    onFilterChanged: updateFilteredCount,
+                    onFirstDataRendered: updateFilteredCount,
+                    onRowDataUpdated: updateFilteredCount,
                     columnDefs: rowData.Columns, // ✅ use the fetched data here,
                     defaultColDef: {
-                        flex: 1,
                         sortable: true,
-                        filter: true
+                        filter: "agTextColumnFilter",
+                        floatingFilter: true,
                     },
                     rowData: rowData.Data, // ✅ use the fetched data here
                     overlayLoadingTemplate: '<span class="ag-overlay-loading-center">Loading...</span>',

@@ -11,7 +11,7 @@ builder.Services.AddSingleton<IAmazonS3>(sp =>
 {
     return new AmazonS3Client(RegionEndpoint.EUWest1);
 });
-
+add owning team next
 // Register DataService as singleton
 builder.Services.AddSingleton<DataService>(sp =>
 {
