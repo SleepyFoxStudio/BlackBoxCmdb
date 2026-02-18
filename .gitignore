@@ -271,3 +271,4 @@ AppD.DCAM/src/hostsettings.json
 local-testing.ps1
 /packer-image-creation/test.ps1
 /data.json
+/Cmdb.db
