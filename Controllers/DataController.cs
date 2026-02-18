@@ -5,13 +5,10 @@ using Microsoft.AspNetCore.Mvc;
 namespace BlackBoxCmdb.Controllers;
 
 [Authorize]
-public class DataController(DataService dataService) : Controller
+public class DataController() : Controller
 {
     public IActionResult Index()
     {
-        var userName = User.Identity?.Name;
-        ViewData["UserName"] = userName;
-        ViewData["DataJson"] = JsonSerializer.Serialize(dataService.Data, new JsonSerializerOptions { PropertyNamingPolicy = null, WriteIndented = true });
         return View();
     }
 }

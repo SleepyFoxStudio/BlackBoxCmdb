@@ -15,6 +15,7 @@
     <PackageReference Include="AWSSDK.S3" Version="4.0.18.5" />
     <PackageReference Include="AWSSDK.SecurityToken" Version="4.0.5.9" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="10.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="10.0.3" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.23.0" />
   </ItemGroup>
 

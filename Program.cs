@@ -11,7 +11,7 @@ builder.Services.AddSingleton<IAmazonS3>(sp =>
 {
     return new AmazonS3Client(RegionEndpoint.EUWest1);
 });
-add owning team next
+//TODO: add owning team next
 // Register DataService as singleton
 builder.Services.AddSingleton<DataService>(sp =>
 {
@@ -19,7 +19,7 @@ builder.Services.AddSingleton<DataService>(sp =>
     string bucketName = "ceat-defaults";
     string s3Key = "awesome.json";
 
-    var service = new DataService(s3Client, bucketName, s3Key);
+    var service = new DataService(bucketName);
     service.LoadAsync().GetAwaiter().GetResult(); // Load at startup
     return service;
 });

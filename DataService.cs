@@ -1,38 +1,39 @@
 ﻿using Amazon.S3;
 using Amazon.SecurityToken;
 using Amazon.SecurityToken.Model;
+using Google.Protobuf.WellKnownTypes;
+using Microsoft.Data.Sqlite;
+using Mysqlx.Crud;
+using MySqlX.XDevAPI;
 using System.Runtime.InteropServices;
+using System.Security.Policy;
 using System.Text.Json;
+using System.Xml.Linq;
 
 namespace BlackBoxCmdb
 {
     public class DataService
     {
-        private readonly string _localPath = "data.json";
-        private readonly string _bucketName;
-        private readonly string _s3Key;
-        private readonly IAmazonS3 _s3Client;
+        private const string ConnectionString = "Data Source=Cmdb.db";
+        private string bucketName;
+
+        public DataService(string bucketName)
+        {
+            this.bucketName = bucketName;
+        }
 
         public dynamic Data { get; private set; } // You can replace dynamic with a proper type
 
-        public DataService(IAmazonS3 s3Client, string bucketName, string s3Key)
-        {
-            _s3Client = s3Client;
-            _bucketName = bucketName;
-            _s3Key = s3Key;
-        }
+        //public DataService(IAmazonS3 s3Client, string bucketName, string s3Key)
+        //{
+        //    _s3Client = s3Client;
+        //    _bucketName = bucketName;
+        //    _s3Key = s3Key;
+        //}
 
         public async Task LoadAsync()
         {
-            //if (File.Exists(_localPath))
-            //{
-            //    Console.WriteLine("Loading data from local file...");
-            //    var json = await File.ReadAllTextAsync(_localPath);
-            //    Data = JsonSerializer.Deserialize<dynamic>(json);
-            //}
-            //else
-            //{
-            //    Console.WriteLine("Local file not found. Loading from S3...");
+
             var stsClient = new AmazonSecurityTokenServiceClient(Amazon.RegionEndpoint.EUWest1);
             var newTempCreds = await stsClient.AssumeRoleAsync(new AssumeRoleRequest
             {
@@ -43,15 +44,184 @@ namespace BlackBoxCmdb
 
             var client = new AmazonS3Client(newTempCreds.Credentials, Amazon.RegionEndpoint.EUWest1);
 
-            var response = await client.GetObjectAsync(_bucketName, _s3Key);
+            var response = await client.GetObjectAsync(bucketName, "awesome.json");
             using var reader = new StreamReader(response.ResponseStream);
             var json = await reader.ReadToEndAsync();
-
-            //// Save locally for next time
-            //await File.WriteAllTextAsync(_localPath, json);
+            await PopulateTable("Accounts", true, "all-aws-accounts.json", client);
+            await PopulateTable("Accounts", false, "all-aws-cn-accounts.json", client);
+            await PopulateTable("Software", true, "cloud-ops-aws-ssm-software.json", client);
+            await PopulateTable("Software", false, "cloud-ops-aws-cn-ssm-software.json", client);
 
             Data = JsonSerializer.Deserialize<dynamic>(json);
         }
-        //}
+
+        private async Task PopulateTable(string tableName, bool dropTableFirst, string jsonFile, AmazonS3Client client)
+        {
+            using var connection = new SqliteConnection(ConnectionString);
+            connection.Open();
+
+
+            var createCommand = connection.CreateCommand();
+
+            if (dropTableFirst)
+            {
+                createCommand.CommandText = $"""DROP TABLE IF EXISTS [{tableName}];""";
+                createCommand.ExecuteNonQuery();
+                switch (tableName)
+                {
+                    case "Accounts":
+                        createCommand.CommandText = $"""
+DROP TABLE IF EXISTS [{tableName}];
+
+CREATE TABLE [{tableName}] (
+  [Id] bigint NOT NULL,
+  [Name] text NULL,
+  [Arn] text NULL,
+  [AccountEmail] text NULL,
+  [ContactEmail] text NULL,
+  [JoinedTimestamp] text NULL,
+  [SupportLevel] text NULL,
+  [OwningTeam] text NULL,
+  CONSTRAINT [sqlite_master_PK_{tableName}] PRIMARY KEY ([Id])
+);
+""";
+                        break;
+                    case "Software":
+                        createCommand.CommandText = $"""
+DROP TABLE IF EXISTS [{tableName}];
+
+CREATE TABLE {tableName} (
+    Id INTEGER PRIMARY KEY AUTOINCREMENT,
+    Ec2InstanceId TEXT NOT NULL,
+    Name TEXT NOT NULL,
+    PackageId TEXT,
+    Version TEXT,
+    Architecture TEXT,
+    Publisher TEXT,
+    InstalledTime TEXT
+);
+
+""";
+                        break;
+                    default:
+                        throw new InvalidOperationException(
+                            $"Unknown table name: {tableName}");
+                }
+                createCommand.ExecuteNonQuery();
+            }
+
+
+
+
+
+
+            var accountsResponse = await client.GetObjectAsync(bucketName, jsonFile);
+            using var stream = accountsResponse.ResponseStream; // directly from S3
+            using var jsonDoc = await JsonDocument.ParseAsync(stream); // parses stream without reading all into a string
+
+            using var transaction = connection.BeginTransaction();
+            using var cmdInsert = connection.CreateCommand();
+
+            switch (tableName)
+            {
+                case "Accounts":
+                    cmdInsert.CommandText = $@"
+INSERT INTO {tableName}
+(Id, Name, Arn, AccountEmail, ContactEmail, JoinedTimestamp, SupportLevel, OwningTeam )
+VALUES ($id, $name, $arn, $accountEmail, $contactEmail, $joinedTimestamp, $supportLevel, $owningTeam);";
+                    cmdInsert.Parameters.Add("id", SqliteType.Text);
+                    cmdInsert.Parameters.Add("$name", SqliteType.Text);
+                    cmdInsert.Parameters.Add("$arn", SqliteType.Text);
+                    cmdInsert.Parameters.Add("$accountEmail", SqliteType.Text);
+                    cmdInsert.Parameters.Add("$contactEmail", SqliteType.Text);
+                    cmdInsert.Parameters.Add("$joinedTimestamp", SqliteType.Text);
+                    cmdInsert.Parameters.Add("$supportLevel", SqliteType.Text);
+                    cmdInsert.Parameters.Add("$owningTeam", SqliteType.Text);
+                    cmdInsert.Prepare();
+
+                    // --- iterate instances ---
+                    foreach (var item in jsonDoc.RootElement.EnumerateArray())
+                    {
+
+                        // Helper: safely get property or empty string
+                        static string SafeGet(JsonElement el, string path)
+                        {
+                            var parts = path.Split('.');
+                            JsonElement current = el;
+                            foreach (var p in parts)
+                            {
+                                if (!current.TryGetProperty(p, out var next))
+                                    return "";
+                                current = next;
+                            }
+                            return current.GetString() ?? "";
+                        }
+                        cmdInsert.Parameters["id"].Value = SafeGet(item, "AccountId");
+                        cmdInsert.Parameters["$name"].Value = SafeGet(item, "Account.Name");
+                        cmdInsert.Parameters["$arn"].Value = SafeGet(item, "Account.Arn");
+                        cmdInsert.Parameters["$accountEmail"].Value = SafeGet(item, "Account.Email");
+                        cmdInsert.Parameters["$contactEmail"].Value = SafeGet(item, "Tags.ContactEmail");
+                        cmdInsert.Parameters["$joinedTimestamp"].Value = SafeGet(item, "Account.JoinedTimestamp");
+                        cmdInsert.Parameters["$supportLevel"].Value = SafeGet(item, "SupportLevel");
+                        cmdInsert.Parameters["$owningTeam"].Value = SafeGet(item, "Tags.OwningTeam");
+
+                        cmdInsert.ExecuteNonQuery();
+                    }
+
+                    transaction.Commit();
+
+
+                    break;
+                case "Software":
+                    cmdInsert.CommandText = $@"
+INSERT INTO {tableName}
+(Ec2InstanceId, Name, PackageId, Version, Architecture, Publisher, InstalledTime)
+VALUES ($instanceId, $name, $packageId, $version, $arch, $publisher, $installed);";
+
+                    cmdInsert.Parameters.Add("$instanceId", SqliteType.Text);
+                    cmdInsert.Parameters.Add("$name", SqliteType.Text);
+                    cmdInsert.Parameters.Add("$packageId", SqliteType.Text);
+                    cmdInsert.Parameters.Add("$version", SqliteType.Text);
+                    cmdInsert.Parameters.Add("$arch", SqliteType.Text);
+                    cmdInsert.Parameters.Add("$publisher", SqliteType.Text);
+                    cmdInsert.Parameters.Add("$installed", SqliteType.Text);
+                    cmdInsert.Prepare();
+
+                    // --- iterate instances ---
+                    foreach (var instance in jsonDoc.RootElement.EnumerateArray())
+                    {
+                        var instanceId = instance.GetProperty("Ec2InstanceId").GetString() ?? "";
+
+                        foreach (var software in instance.GetProperty("SoftwareDetails").EnumerateArray())
+                        {
+                            // Helper function to safely get string or empty
+                            static string SafeGet(JsonElement el, string propName)
+                                => el.TryGetProperty(propName, out var p) ? p.GetString() ?? "" : "";
+
+                            cmdInsert.Parameters["$instanceId"].Value = instanceId;
+                            cmdInsert.Parameters["$name"].Value = SafeGet(software, "Name");
+                            cmdInsert.Parameters["$packageId"].Value = SafeGet(software, "PackageId");
+                            cmdInsert.Parameters["$version"].Value = SafeGet(software, "Version");
+                            cmdInsert.Parameters["$arch"].Value = SafeGet(software, "Architecture");
+                            cmdInsert.Parameters["$publisher"].Value = SafeGet(software, "Publisher");
+                            cmdInsert.Parameters["$installed"].Value = SafeGet(software, "InstalledTime");
+
+
+
+                            cmdInsert.ExecuteNonQuery();
+                        }
+                    }
+                    transaction.Commit();
+                    break;
+                default:
+                    throw new InvalidOperationException(
+                        $"Unknown table name: {tableName}");
+            }
+
+
+
+
+
+        }
     }
 }
