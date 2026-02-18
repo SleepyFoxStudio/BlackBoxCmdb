@@ -88,11 +88,9 @@ public class GetDataController(DataService dataService) : ControllerBase
         if (tableData.Data.Any())
         {
             colTitles = tableData.Data
-    .SelectMany(row => row.Keys)  // flatten all keys from all rows
-    .Distinct()                   // remove duplicates
-    .ToList();
-
-
+                .SelectMany(row => row.Keys)  // flatten all keys from all rows
+                .Distinct()                   // remove duplicates
+                .ToList();
         }
 
         foreach (var column in colTitles)

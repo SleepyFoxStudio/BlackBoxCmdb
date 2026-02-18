@@ -14,7 +14,13 @@ namespace BlackBoxCmdb
 {
     public class DataService
     {
-        private const string ConnectionString = "Data Source=Cmdb.db";
+        internal const string ConnectionString = "Data Source=Cmdb.db";
+        //private const string ConnectionString = "Data Source=Cmdb;Mode=Memory;Cache=Shared";
+
+
+        // This connection will stay open for the entire app lifetime
+        internal readonly SqliteConnection PrimaryConnection = new SqliteConnection(ConnectionString);
+
         private string bucketName;
 
         public DataService(string bucketName)
@@ -22,14 +28,7 @@ namespace BlackBoxCmdb
             this.bucketName = bucketName;
         }
 
-        public dynamic Data { get; private set; } // You can replace dynamic with a proper type
-
-        //public DataService(IAmazonS3 s3Client, string bucketName, string s3Key)
-        //{
-        //    _s3Client = s3Client;
-        //    _bucketName = bucketName;
-        //    _s3Key = s3Key;
-        //}
+        public dynamic Data { get; private set; }
 
         public async Task LoadAsync()
         {
@@ -57,11 +56,10 @@ namespace BlackBoxCmdb
 
         private async Task PopulateTable(string tableName, bool dropTableFirst, string jsonFile, AmazonS3Client client)
         {
-            using var connection = new SqliteConnection(ConnectionString);
-            connection.Open();
+            PrimaryConnection.Open();
 
 
-            var createCommand = connection.CreateCommand();
+            var createCommand = PrimaryConnection.CreateCommand();
 
             if (dropTableFirst)
             {
@@ -71,8 +69,6 @@ namespace BlackBoxCmdb
                 {
                     case "Accounts":
                         createCommand.CommandText = $"""
-DROP TABLE IF EXISTS [{tableName}];
-
 CREATE TABLE [{tableName}] (
   [Id] bigint NOT NULL,
   [Name] text NULL,
@@ -88,8 +84,6 @@ CREATE TABLE [{tableName}] (
                         break;
                     case "Software":
                         createCommand.CommandText = $"""
-DROP TABLE IF EXISTS [{tableName}];
-
 CREATE TABLE {tableName} (
     Id INTEGER PRIMARY KEY AUTOINCREMENT,
     Ec2InstanceId TEXT NOT NULL,
@@ -119,8 +113,8 @@ CREATE TABLE {tableName} (
             using var stream = accountsResponse.ResponseStream; // directly from S3
             using var jsonDoc = await JsonDocument.ParseAsync(stream); // parses stream without reading all into a string
 
-            using var transaction = connection.BeginTransaction();
-            using var cmdInsert = connection.CreateCommand();
+            using var transaction = PrimaryConnection.BeginTransaction();
+            using var cmdInsert = PrimaryConnection.CreateCommand();
 
             switch (tableName)
             {
@@ -217,7 +211,6 @@ VALUES ($instanceId, $name, $packageId, $version, $arch, $publisher, $installed)
                     throw new InvalidOperationException(
                         $"Unknown table name: {tableName}");
             }
-
 
 
 
