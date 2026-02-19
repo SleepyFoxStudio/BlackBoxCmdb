@@ -52,6 +52,13 @@
             })
             .then(rowData => {
                 // 2️⃣ Initialize grid with fetched data
+
+                var columnDefs = rowData.Columns.forEach(col => {
+                    if (col.filter === 'VersionRangeFilter') {
+                        col.filter = VersionRangeFilter;
+                    }
+                });
+
                 const gridOptions = {
                     onFilterChanged: updateFilteredCount,
                     onFirstDataRendered: updateFilteredCount,

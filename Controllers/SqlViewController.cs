@@ -102,6 +102,10 @@ public class SqlViewController(DataService dataService) : ControllerBase
             dynamic col = new ExpandoObject();
             col.field = reader.GetName(i);
             col.width = 200;
+            if (columnNames[i].Contains("version", StringComparison.InvariantCultureIgnoreCase))
+            {
+                col.filter = "VersionRangeFilter";
+            }
             tableData.Columns.Add(col);
         }
 

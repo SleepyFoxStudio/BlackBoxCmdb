@@ -72,7 +72,7 @@ namespace BlackBoxCmdb
                     case "Accounts":
                         createCommand.CommandText = $"""
 CREATE TABLE [{tableName}] (
-  [Id] bigint NOT NULL,
+  [Id] text NOT NULL,
   [Name] text NULL,
   [Arn] text NULL,
   [AccountEmail] text NULL,
@@ -96,6 +96,9 @@ CREATE TABLE {tableName} (
     Publisher TEXT,
     InstalledTime TEXT
 );
+
+CREATE INDEX IF NOT EXISTS idx_{tableName}_Ec2InstanceId
+ON {tableName}(Ec2InstanceId);
 
 """;
                         break;
@@ -132,7 +135,9 @@ DROP VIEW IF EXISTS SoftwareWithEc2;
 CREATE VIEW SoftwareWithEc2 AS
 SELECT
     e.AccountId,
+    a.Name AS AccountName,
     e.Region,
+    e.OwningTeam,
     s.Ec2InstanceId,
     s.Name,
     s.PackageId,
@@ -142,7 +147,9 @@ SELECT
     s.InstalledTime
 FROM Software s
 LEFT JOIN Ec2 e
-    ON s.Ec2InstanceId = e.Id;
+    ON s.Ec2InstanceId = e.Id
+LEFT JOIN Accounts a
+    ON e.AccountId = a.Id;
 """;
             createCommand.ExecuteNonQuery();
 
