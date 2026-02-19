@@ -39,11 +39,11 @@ public class SqlViewController(DataService dataService) : ControllerBase
         // Change to type = "view" if you want views
         var sql = "SELECT name FROM sqlite_master WHERE type='table' AND name NOT LIKE 'sqlite_%';";
 
-        using (var conn = dataService.PrimaryConnection)
+        var conn = dataService.PrimaryConnection;
         using (var cmd = conn.CreateCommand())
         {
             cmd.CommandText = sql;
-            conn.Open();
+            //conn.Open();
 
             using (var reader = cmd.ExecuteReader())
             {
@@ -68,9 +68,9 @@ public class SqlViewController(DataService dataService) : ControllerBase
     private object GetSqlData(DataRequest request)
     {
         var tableData = new TableData();
+        tableData.ViewName = request.View;
 
-        using var connection = dataService.PrimaryConnection;
-        connection.Open();
+        var connection = dataService.PrimaryConnection;
 
         using var command = connection.CreateCommand();
         command.CommandText = $"SELECT * FROM {request.View};";

@@ -50,6 +50,8 @@ namespace BlackBoxCmdb
             await PopulateTable("Accounts", false, "all-aws-cn-accounts.json", client);
             await PopulateTable("Software", true, "cloud-ops-aws-ssm-software.json", client);
             await PopulateTable("Software", false, "cloud-ops-aws-cn-ssm-software.json", client);
+            await PopulateTable("Ec2", true, "cloud-ops-aws-ec2-instances.json", client);
+            await PopulateTable("Ec2", false, "cloud-ops-aws-cn-ec2-instances.json", client);
 
             Data = JsonSerializer.Deserialize<dynamic>(json);
         }
@@ -97,6 +99,25 @@ CREATE TABLE {tableName} (
 
 """;
                         break;
+                    case "Ec2":
+                        createCommand.CommandText = $"""
+CREATE TABLE [{tableName}] (
+  [Id] text NOT NULL,
+  [Name] text NULL,
+  [PrivateIp] text NULL,
+  [PlatformType] text NULL,
+  [PlatformDetails] text NULL,
+  [LaunchTime] text NULL,
+  [AccountId] text NULL,
+  [Region] text NULL,
+  [OwningTeam] text NULL,
+  [Product] text NULL,
+  [Component] text NULL,
+  [Environment] text NULL,
+  CONSTRAINT [sqlite_master_PK_{tableName}] PRIMARY KEY ([Id])
+);
+""";
+                        break;
                     default:
                         throw new InvalidOperationException(
                             $"Unknown table name: {tableName}");
@@ -137,19 +158,6 @@ VALUES ($id, $name, $arn, $accountEmail, $contactEmail, $joinedTimestamp, $suppo
                     foreach (var item in jsonDoc.RootElement.EnumerateArray())
                     {
 
-                        // Helper: safely get property or empty string
-                        static string SafeGet(JsonElement el, string path)
-                        {
-                            var parts = path.Split('.');
-                            JsonElement current = el;
-                            foreach (var p in parts)
-                            {
-                                if (!current.TryGetProperty(p, out var next))
-                                    return "";
-                                current = next;
-                            }
-                            return current.GetString() ?? "";
-                        }
                         cmdInsert.Parameters["id"].Value = SafeGet(item, "AccountId");
                         cmdInsert.Parameters["$name"].Value = SafeGet(item, "Account.Name");
                         cmdInsert.Parameters["$arn"].Value = SafeGet(item, "Account.Arn");
@@ -182,16 +190,12 @@ VALUES ($instanceId, $name, $packageId, $version, $arch, $publisher, $installed)
                     cmdInsert.Prepare();
 
                     // --- iterate instances ---
-                    foreach (var instance in jsonDoc.RootElement.EnumerateArray())
+                    foreach (var item in jsonDoc.RootElement.EnumerateArray())
                     {
-                        var instanceId = instance.GetProperty("Ec2InstanceId").GetString() ?? "";
+                        var instanceId = item.GetProperty("Ec2InstanceId").GetString() ?? "";
 
-                        foreach (var software in instance.GetProperty("SoftwareDetails").EnumerateArray())
+                        foreach (var software in item.GetProperty("SoftwareDetails").EnumerateArray())
                         {
-                            // Helper function to safely get string or empty
-                            static string SafeGet(JsonElement el, string propName)
-                                => el.TryGetProperty(propName, out var p) ? p.GetString() ?? "" : "";
-
                             cmdInsert.Parameters["$instanceId"].Value = instanceId;
                             cmdInsert.Parameters["$name"].Value = SafeGet(software, "Name");
                             cmdInsert.Parameters["$packageId"].Value = SafeGet(software, "PackageId");
@@ -207,6 +211,45 @@ VALUES ($instanceId, $name, $packageId, $version, $arch, $publisher, $installed)
                     }
                     transaction.Commit();
                     break;
+                case "Ec2":
+                    cmdInsert.CommandText = $@"
+INSERT INTO {tableName}
+(Id,Name,PrivateIp,PlatformType,PlatformDetails,LaunchTime,AccountId,Region,OwningTeam,Product,Component,Environment)
+VALUES ($id,$name,$privateIp,$platformType,$platformDetails,$launchTime,$accountId,$region,$owningTeam,$product,$component,$environment);";
+
+                    cmdInsert.Parameters.Add("$id", SqliteType.Text);
+                    cmdInsert.Parameters.Add("$name", SqliteType.Text);
+                    cmdInsert.Parameters.Add("$privateIp", SqliteType.Text);
+                    cmdInsert.Parameters.Add("$platformType", SqliteType.Text);
+                    cmdInsert.Parameters.Add("$platformDetails", SqliteType.Text);
+                    cmdInsert.Parameters.Add("$launchTime", SqliteType.Text);
+                    cmdInsert.Parameters.Add("$accountId", SqliteType.Text);
+                    cmdInsert.Parameters.Add("$region", SqliteType.Text);
+                    cmdInsert.Parameters.Add("$owningTeam", SqliteType.Text);
+                    cmdInsert.Parameters.Add("$product", SqliteType.Text);
+                    cmdInsert.Parameters.Add("$component", SqliteType.Text);
+                    cmdInsert.Parameters.Add("$environment", SqliteType.Text);
+                    cmdInsert.Prepare();
+
+                    // --- iterate instances ---
+                    foreach (var item in jsonDoc.RootElement.EnumerateArray())
+                    {
+                        cmdInsert.Parameters["$id"].Value = SafeGet(item, "Ec2InstanceId");
+                        cmdInsert.Parameters["$name"].Value = SafeGet(item, "Ec2InstanceName");
+                        cmdInsert.Parameters["$privateIp"].Value = SafeGet(item, "PrivateIp");
+                        cmdInsert.Parameters["$platformType"].Value = SafeGet(item, "PlatformType");
+                        cmdInsert.Parameters["$platformDetails"].Value = SafeGet(item, "PlatformDetails");
+                        cmdInsert.Parameters["$launchTime"].Value = SafeGet(item, "LaunchTime");
+                        cmdInsert.Parameters["$accountId"].Value = SafeGet(item, "AccountId");
+                        cmdInsert.Parameters["$region"].Value = SafeGet(item, "Region");
+                        cmdInsert.Parameters["$owningTeam"].Value = SafeGet(item, "Tags.Team");
+                        cmdInsert.Parameters["$product"].Value = SafeGet(item, "Tags.Product");
+                        cmdInsert.Parameters["$component"].Value = SafeGet(item, "Tags.Component");
+                        cmdInsert.Parameters["$environment"].Value = SafeGet(item, "Tags.Environment");
+                        cmdInsert.ExecuteNonQuery();
+                    }
+                    transaction.Commit();
+                    break;
                 default:
                     throw new InvalidOperationException(
                         $"Unknown table name: {tableName}");
@@ -216,5 +259,21 @@ VALUES ($instanceId, $name, $packageId, $version, $arch, $publisher, $installed)
 
 
         }
+
+
+        // Helper: safely get property or empty string
+        static string SafeGet(JsonElement el, string path)
+        {
+            var parts = path.Split('.');
+            JsonElement current = el;
+            foreach (var p in parts)
+            {
+                if (!current.TryGetProperty(p, out var next))
+                    return "";
+                current = next;
+            }
+            return current.GetString() ?? "";
+        }
+
     }
 }
