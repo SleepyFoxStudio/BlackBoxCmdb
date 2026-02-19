@@ -26,7 +26,7 @@ public class SqlViewController(DataService dataService) : ControllerBase
     [HttpPost()]
     public async Task<IActionResult> GetData([FromBody] DataRequest request)
     {
-        var view = string.IsNullOrEmpty(request.View) ? "Accounts" : request.View;
+        var view = string.IsNullOrEmpty(request.View) ? "SoftwareWithEc2" : request.View;
         request.View = view;
         await ValidateViewName(view);
         return Ok(GetSqlData(request));
@@ -37,13 +37,26 @@ public class SqlViewController(DataService dataService) : ControllerBase
         var names = new List<string>();
 
         // Change to type = "view" if you want views
-        var sql = "SELECT name FROM sqlite_master WHERE type='table' AND name NOT LIKE 'sqlite_%';";
+        var sql = "SELECT name FROM sqlite_master WHERE type='view' AND name NOT LIKE 'sqlite_%';";
 
         var conn = dataService.PrimaryConnection;
         using (var cmd = conn.CreateCommand())
         {
             cmd.CommandText = sql;
-            //conn.Open();
+
+            using (var reader = cmd.ExecuteReader())
+            {
+                while (reader.Read())
+                {
+                    names.Add(reader.GetString(0));
+                }
+            }
+        }
+        sql = "SELECT name FROM sqlite_master WHERE type='table' AND name NOT LIKE 'sqlite_%';";
+
+        using (var cmd = conn.CreateCommand())
+        {
+            cmd.CommandText = sql;
 
             using (var reader = cmd.ExecuteReader())
             {
@@ -56,7 +69,7 @@ public class SqlViewController(DataService dataService) : ControllerBase
 
         if (!names.Any(s=> s.Equals(view)))
         {
-            throw new Exception("Invalid view name set");
+            throw new Exception("Invalid view or table name set");
         }
     }
 
@@ -67,8 +80,10 @@ public class SqlViewController(DataService dataService) : ControllerBase
 
     private object GetSqlData(DataRequest request)
     {
-        var tableData = new TableData();
-        tableData.ViewName = request.View;
+        var tableData = new TableData
+        {
+            ViewName = request.View
+        };
 
         var connection = dataService.PrimaryConnection;
 

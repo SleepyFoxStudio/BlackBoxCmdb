@@ -126,6 +126,25 @@ CREATE TABLE [{tableName}] (
             }
 
 
+            createCommand.CommandText = """
+DROP VIEW IF EXISTS SoftwareWithEc2;
+
+CREATE VIEW SoftwareWithEc2 AS
+SELECT
+    e.AccountId,
+    e.Region,
+    s.Ec2InstanceId,
+    s.Name,
+    s.PackageId,
+    s.Version,
+    s.Architecture,
+    s.Publisher,
+    s.InstalledTime
+FROM Software s
+LEFT JOIN Ec2 e
+    ON s.Ec2InstanceId = e.Id;
+""";
+            createCommand.ExecuteNonQuery();
 
 
 
