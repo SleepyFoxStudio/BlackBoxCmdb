@@ -14,7 +14,7 @@ namespace BlackBoxCmdb
 {
     public class DataService
     {
-        internal const string ConnectionString = "Data Source=Cmdb.db";
+        private const string ConnectionString = "Data Source=Cmdb.db";
         //private const string ConnectionString = "Data Source=Cmdb;Mode=Memory;Cache=Shared";
 
 

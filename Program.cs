@@ -17,7 +17,6 @@ builder.Services.AddSingleton<DataService>(sp =>
 {
     var s3Client = sp.GetRequiredService<IAmazonS3>();
     string bucketName = "ceat-defaults";
-    string s3Key = "awesome.json";
 
     var service = new DataService(bucketName);
     service.LoadAsync().GetAwaiter().GetResult(); // Load at startup
