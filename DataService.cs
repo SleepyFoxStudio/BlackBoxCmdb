@@ -117,6 +117,8 @@ CREATE TABLE [{tableName}] (
   [Product] text NULL,
   [Component] text NULL,
   [Environment] text NULL,
+  [InstanceType] text NULL,
+  [Architecture] text NULL,
   CONSTRAINT [sqlite_master_PK_{tableName}] PRIMARY KEY ([Id])
 );
 """;
@@ -240,8 +242,8 @@ VALUES ($instanceId, $name, $packageId, $version, $arch, $publisher, $installed)
                 case "Ec2":
                     cmdInsert.CommandText = $@"
 INSERT INTO {tableName}
-(Id,Name,PrivateIp,PlatformType,PlatformDetails,LaunchTime,AccountId,Region,OwningTeam,Product,Component,Environment)
-VALUES ($id,$name,$privateIp,$platformType,$platformDetails,$launchTime,$accountId,$region,$owningTeam,$product,$component,$environment);";
+(Id,Name,PrivateIp,PlatformType,PlatformDetails,LaunchTime,AccountId,Region,OwningTeam,Product,Component,Environment,InstanceType,Architecture)
+VALUES ($id,$name,$privateIp,$platformType,$platformDetails,$launchTime,$accountId,$region,$owningTeam,$product,$component,$environment,$instanceType,$architecture);";
 
                     cmdInsert.Parameters.Add("$id", SqliteType.Text);
                     cmdInsert.Parameters.Add("$name", SqliteType.Text);
@@ -255,6 +257,8 @@ VALUES ($id,$name,$privateIp,$platformType,$platformDetails,$launchTime,$account
                     cmdInsert.Parameters.Add("$product", SqliteType.Text);
                     cmdInsert.Parameters.Add("$component", SqliteType.Text);
                     cmdInsert.Parameters.Add("$environment", SqliteType.Text);
+                    cmdInsert.Parameters.Add("$instanceType", SqliteType.Text);
+                    cmdInsert.Parameters.Add("$architecture", SqliteType.Text);
                     cmdInsert.Prepare();
 
                     // --- iterate instances ---
@@ -272,6 +276,8 @@ VALUES ($id,$name,$privateIp,$platformType,$platformDetails,$launchTime,$account
                         cmdInsert.Parameters["$product"].Value = SafeGet(item, "Tags.Product");
                         cmdInsert.Parameters["$component"].Value = SafeGet(item, "Tags.Component");
                         cmdInsert.Parameters["$environment"].Value = SafeGet(item, "Tags.Environment");
+                        cmdInsert.Parameters["$instanceType"].Value = SafeGet(item, "InstanceType");
+                        cmdInsert.Parameters["$architecture"].Value = SafeGet(item, "Architecture");
                         cmdInsert.ExecuteNonQuery();
                     }
                     transaction.Commit();
